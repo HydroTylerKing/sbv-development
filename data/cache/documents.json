@@ -1,0 +1,372 @@
+{
+  "CZC26-00206": {
+    "status": "Project Not Needed",
+    "documents": [
+      "PDS-Application | 07/23/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00MQF&agencyCode=BOISE",
+    "project": "PLN26-00768"
+  },
+  "CZC26-00249": {
+    "status": "Approved",
+    "documents": [
+      "PDS-Application | 08/28/2026",
+      "PDS-Receipts - | 09/03/2026",
+      "PDS-Letter of Intent - LETTER OF EXPLANATION 9.3.2026 | 09/28/2026",
+      "PDS-Statement of Legal Interest - STATEMENT OF LEGAL INTEREST 9.3.2026 | 09/28/2026",
+      "PDS-Other Small Docs - FIRE FLOW LETTER 9.3.2026 | 09/28/2026",
+      "PDS-Photos - SITE PHOTOS 9.3.2026 | 09/28/2026",
+      "PDS-Maps and Drawings - SITE PLAN 9.3.2026 | 09/28/2026",
+      "PDS-Maps and Drawings - ELEVATIONS 9.3.2026 | 09/28/2026",
+      "PDS-Maps and Drawings - FLOOR PLANS 9.3.2026 | 09/28/2026",
+      "PDS-Legal Notice - PZ_ADMINISTRATIVE LEGAL NOTICE | 10/21/2026",
+      "PDS-Maps and Drawings - NOTICING RADIUS MAP | 10/21/2026",
+      "PDS-Agency Comments - PW DRAINAGE COMMENTS 9.15.2026 | 10/23/2026",
+      "PDS-Agency Comments - BOISE PARKS COMMENTS 10.7.2026 | 10/23/2026",
+      "PDS-Agency Comments - PW SEWER COMMENTS 10.5.2026 | 10/23/2026",
+      "PDS-Agency Comments - BOISE FIRE COMMENTS 10.9.2026 | 10/23/2026",
+      "PDS-Agency Comments - VEOLIA WATER COMMENTS 10.2.2026 | 10/23/2026",
+      "PDS-Agency Comments - ACHD COMMENTS 10.7.2026 | 10/23/2026",
+      "PDS-Maps and Drawings - REVISED SITE PLAN 10.7.2026 | 10/23/2026"
+    ],
+    "appeal_end": "11/02/2026",
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00QWA&agencyCode=BOISE",
+    "project": "PLN26-00768"
+  },
+  "PLN26-00567": {
+    "status": "Project Not Needed",
+    "documents": [
+      "PDS-Other Small Docs - PROJECT DESCRIPTION | 06/10/2026",
+      "PDS-Other Small Docs - SITE PLAN | 06/10/2026",
+      "PDS-Application | 06/10/2026",
+      "PDS-Other Small Docs - UPDATED PROJECT DESCRIPTION, 2 ADUS | 07/15/2026",
+      "PDS-Other Small Docs - UPDATED SITE PLAN, 2 ADUS | 07/15/2026",
+      "PDS-Concept Review Summary Report - | 07/22/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00HV1&agencyCode=BOISE",
+    "project": "PLN26-00768"
+  },
+  "PLN26-00768": {
+    "status": "Project Entitled",
+    "documents": [
+      "PDS-Other Small Docs - PROJECT DESCRIPTION | 08/14/2026",
+      "PDS-Other Small Docs - SITE PLAN | 08/14/2026",
+      "PDS-Application | 08/14/2026",
+      "PDS-Other Small Docs - SITE PLAN | 08/27/2026",
+      "PDS-Other Small Docs - SITE PLAN | 08/27/2026",
+      "PDS-Concept Review Summary Report - | 08/28/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00PEG&agencyCode=BOISE",
+    "project": "PLN26-00768"
+  },
+  "CZC26-00227": {
+    "status": "Approved",
+    "documents": [
+      "PDS-Application | 08/21/2026",
+      "PDS-Receipts - | 08/25/2026",
+      "PDS-Letter of Intent - LETTER OF INTENT 8/25/2026 | 09/01/2026",
+      "PDS-Maps and Drawings - SITE PLAN 8/25/2026 | 09/01/2026",
+      "PDS-Other Small Docs - VEOLIA FIRE FLOW INFO 8/25/2026 | 09/01/2026",
+      "PDS-Maps and Drawings - LANDSCAPE PLAN 8/25/2026 | 09/01/2026",
+      "PDS-Statement of Legal Interest - STATEMENT OF LEGAL INTEREST 8/25/2026 | 09/01/2026",
+      "PDS-Maps and Drawings - ELEVATIONS 8/25/2026 | 09/01/2026",
+      "PDS-Photos - SITE PHOTOS 8/25/2026 | 09/01/2026",
+      "PDS-Maps and Drawings - FLOOR PLANS 8/25/2026 | 09/01/2026",
+      "PDS-Transmittal Agencies - TRANSMITTAL SHEET | 09/04/2026",
+      "PDS-Agency Comments - ACHD AGENCY COMMENTS 9/14/2026 | 09/17/2026",
+      "PDS-Maps and Drawings - SITE PLAN V2 9/23/2026 | 09/25/2026",
+      "PDS-Maps and Drawings - FLOOR PLANS V2 9/23/2026 | 09/25/2026",
+      "PDS-Maps and Drawings - LANDSCAPE PLAN V2 9/23/2026 | 09/25/2026",
+      "PDS-Maps and Drawings - ELEVATIONS V2 9/23/2026 | 09/25/2026",
+      "PDS-Agency Comments - PARKS AND RECREATION DEPARTMENT AGENCY COMMENTS 9/11/2026 | 10/05/2026",
+      "PDS-Agency Comments - SEWER AGENCY COMMENTS 9/8/2026 | 10/05/2026",
+      "PDS-Agency Comments - FIRE DEPARTMENT AGENCY COMMENTS 9/11/2026 | 10/05/2026",
+      "PDS-Agency Comments - HILLSIDE DRAINAGE AGENCY COMMENTS 9/15/2026 | 10/05/2026",
+      "PDS-Agency Comments - FIRE DEPARTMENT AGENCY COMMENTS V2 10/5/2026 | 10/05/2026",
+      "PDS-Agency Comments - VEOLIA WATER IDAHO AGENCY COMMENTS 9/8/2026 | 10/05/2026",
+      "PDS-Letter of Intent - FIRE COMMENT RESPONSE LETTER 9/29/2026 | 10/05/2026",
+      "PDS-Maps and Drawings - NOTICING RADIUS MAP | 10/07/2026",
+      "PDS-Legal Notice - ADMIN NOTICE | 10/07/2026",
+      "PDS-Correspondence - FIRE COMMENT RESPONSE LETTER 9/29/2026 | 10/07/2026",
+      "PDS-Action Letter - ADMIN APPROVAL LETTER ISSUED 10/9/2026 | 10/09/2026",
+      "PDS-Appeals - APPEAL TO HE RECEIVED ON OCTOBER 19, 2026, NOT SCHEDULED | 10/22/2026"
+    ],
+    "appeal_end": "10/19/2026",
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00OHT&agencyCode=BOISE",
+    "project": "PLN26-00594"
+  },
+  "PLN26-00594": {
+    "status": "Planning Application Review",
+    "documents": [
+      "PDS-Other Small Docs - PERMIT PLANS 6-18-26 | 06/18/2026",
+      "PDS-Application | 06/18/2026",
+      "PDS-Other Small Docs - UPDATED PLAN SET | 08/06/2026",
+      "PDS-Concept Review Summary Report - | 08/06/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00IY3&agencyCode=BOISE",
+    "project": "PLN26-00594"
+  },
+  "CZC26-00266": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00T9Q&agencyCode=BOISE",
+    "project": "PLN25-00824"
+  },
+  "PLN25-00824": {
+    "status": "Pending Application Submittal",
+    "documents": [
+      "PDS-Other Small Docs - PROJECT DESCIPTION | 09/18/2025",
+      "PDS-Other Small Docs - BASIC SITE PLAN | 09/18/2025",
+      "PDS-Application | 09/18/2025",
+      "PDS-Other Small Docs - SITE PLAN, FLOOR PLANS, RENDERINGS/ELEVATIONS | 08/20/2026",
+      "PDS-Other Small Docs - 1509 BOISE AVE SITE PLAN 9.4.2026 | 09/04/2026",
+      "PDS-Other Small Docs - UPDATED 9.10.2026 SITE PLAN + FLOOR PLANS + RENDERS | 09/10/2026",
+      "PDS-Concept Review Summary Report - | 09/23/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00TJG&agencyCode=BOISE",
+    "project": "PLN25-00824"
+  },
+  "SUB26-00052": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00T9R&agencyCode=BOISE",
+    "project": "PLN25-00824"
+  },
+  "CVA26-00032": {
+    "status": "Withdrawn",
+    "documents": [
+      "PDS-Application | 06/29/2026",
+      "PDS-Receipts - | 07/10/2026",
+      "PDS-Transmittal Agencies - CVA26-00032 TRANSMITTAL AGENCIES 8-7-26 | 08/07/2026",
+      "PDS-Letter of Intent - LETTER OF EXPLANATION 7.10.2026 | 08/07/2026",
+      "PDS-Photos - SITE PHOTOS 7.10.2026 | 08/07/2026",
+      "PDS-Statement of Legal Interest - STATEMENT OF LEGAL INTEREST 7.10.2026 | 08/07/2026",
+      "PDS-Maps and Drawings - MOBILITY PLAN 7.10.2026 | 08/07/2026",
+      "PDS-Maps and Drawings - FLOOR PLAN 7.10.2026 | 08/07/2026",
+      "PDS-Maps and Drawings - SITE PLAN 7.10.2026 | 08/07/2026",
+      "PDS-Maps and Drawings - ELEVATIONS 7.10.2026 | 08/07/2026",
+      "PDS-Other Small Docs - ARBORIST EMAIL AND TREE PHOTOS 8.12.2026 | 08/13/2026",
+      "PDS-Legal Notice - HE_HYBRID MEETING LEGAL NOTICE 9-14-26 | 08/26/2026",
+      "PDS-Maps and Drawings - LAND USE MAP | 08/26/2026",
+      "PDS-Maps and Drawings - ZONING MAP | 08/26/2026",
+      "PDS-Maps and Drawings - NOTICING RADIUS MAP | 08/26/2026",
+      "PDS-Maps and Drawings - AERIAL MAP | 08/26/2026",
+      "PDS-Correspondence - NOTIFICATION LETTER FOR THE SEPTEMBER 14, 2026 HE HEARING | 09/01/2026",
+      "PDS-Correspondence - APPLICANT REQUEST TO WITHDRAW APPLICATION 9.1.2026 | 09/02/2026",
+      "PDS-Project Report/Memo - WITHDRAWAL MEMO FOR THE SEPTEMBER 14, 2026 HE HEARING | 09/08/2026",
+      "PDS-Action Letter - ACTION LETTER FOR THE SEPTEMBER 14, 2026 HEARING EXAMINER | 09/16/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00K4Y&agencyCode=BOISE",
+    "project": "PLN26-00344"
+  },
+  "CZC26-00163": {
+    "status": "Returned to Applicant",
+    "documents": [
+      "PDS-Application | 06/29/2026",
+      "PDS-Receipts - | 07/24/2026",
+      "PDS-Letter of Intent - LETTER OF EXPLANATION - ADU 7.24.2026 | 08/04/2026",
+      "PDS-Other Small Docs - FIRE FLOW LETTER 7.24.2026 | 08/04/2026",
+      "PDS-Statement of Legal Interest - STATEMENT OF LEGAL INTEREST 7.24.2026 | 08/04/2026",
+      "PDS-Letter of Intent - LETTER OF EXPLANATION - LNC 7.24.2026 | 08/04/2026",
+      "PDS-Photos - SITE PHOTOS 7.24.2026 | 08/04/2026",
+      "PDS-Other Small Docs - LNC - DEMO'ED GARAGE (2003) 7.24.2026 | 08/04/2026",
+      "PDS-Other Small Docs - LNC - GARAGE 2010-CURRENT 7.24.2026 | 08/04/2026",
+      "PDS-Maps and Drawings - MOBILITY PLAN 7.24.2026 | 08/04/2026",
+      "PDS-Maps and Drawings - FLOOR PLANS 7.24.2026 | 08/04/2026",
+      "PDS-Maps and Drawings - EXTERIOR ELEVATIONS 7.24.2026 | 08/04/2026",
+      "PDS-Maps and Drawings - SITE PLAN 7.24.2026 | 08/04/2026",
+      "PDS-Maps and Drawings - COLORED ELEVATIONS 7.24.2026 | 08/04/2026",
+      "PDS-Transmittal Agencies - TRANSMITTAL SHEET | 08/04/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00K4X&agencyCode=BOISE",
+    "project": "PLN26-00344"
+  },
+  "NBR26-00071": {
+    "status": "Complete",
+    "documents": [
+      "PDS-Application | 06/04/2026",
+      "PDS-Receipts - | 06/04/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00D8X&agencyCode=BOISE",
+    "project": "PLN26-00344"
+  },
+  "PLN26-00344": {
+    "status": "Planning Application Review",
+    "documents": [
+      "PDS-Other Small Docs - CR_PROJECT_DESCRIPTION_04142026 | 04/14/2026",
+      "PDS-Other Small Docs - CR_SITE_PLAN_04142026 | 04/14/2026",
+      "PDS-Application | 04/14/2026",
+      "PDS-Concept Review Summary Report - | 05/05/2026",
+      "PDS-Other Small Docs - NM_MEETING_06252026 | 06/26/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00AQV&agencyCode=BOISE",
+    "project": "PLN26-00344"
+  },
+  "AWS26-00014": {
+    "status": "Returned to Applicant",
+    "documents": [
+      "PDS-Other Small Docs - EXHIBIT B-1 | 06/26/2026",
+      "PDS-Other Small Docs - EXHIBIT C-1 | 06/26/2026",
+      "PDS-Other Small Docs - EXHIBIT C-2 WILL SERVE LETTER | 06/26/2026",
+      "PDS-Other Small Docs - EXHIBIT C-3 | 06/26/2026",
+      "PDS-Other Small Docs - MONTANA AWS APPLICATION | 06/26/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00729&agencyCode=BOISE",
+    "project": "PLN26-00096"
+  },
+  "NBR26-00037": {
+    "status": "Complete",
+    "documents": [
+      "PDS-Receipts - | 06/15/2026",
+      "PDS-Application | 06/16/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=0072D&agencyCode=BOISE",
+    "project": "PLN26-00096"
+  },
+  "PLN26-00096": {
+    "status": "Planning Application Review",
+    "documents": [
+      "PDS-Other Small Docs - PROJECT DESCRIPTION | 01/26/2026",
+      "PDS-Other Small Docs - 4 LOT MLD | 01/26/2026",
+      "PDS-Other Small Docs - 6 LOT SUBDIVISION | 01/26/2026",
+      "PDS-Application | 01/26/2026",
+      "PDS-Other Small Docs - UPDATED 5-LOT LAYOUT 2/12/2026 | 02/23/2026",
+      "PDS-Other Small Docs - UPDATED LAYOUT 3/4/2026 | 03/11/2026",
+      "PDS-Concept Review Summary Report - | 03/11/2026",
+      "PDS-Other Small Docs - UPDATED CONCEPT PLAN 6/4/2026 | 06/10/2026",
+      "PDS-Concept Review Summary Report - | 06/22/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=002FN&agencyCode=BOISE",
+    "project": "PLN26-00096"
+  },
+  "SUB26-00033": {
+    "status": "In Review",
+    "documents": [
+      "PDS-Application | 07/03/2026",
+      "PDS-Receipts - | 07/10/2026",
+      "PDS-Letter of Intent - LETTER OF EXPLANATION | 07/30/2026",
+      "PDS-Statement of Legal Interest - STATMENT OF LEGAL INTEREST | 07/30/2026",
+      "PDS-Maps and Drawings - FINAL PLAT | 07/30/2026",
+      "PDS-Maps and Drawings - PRELIMINARY PLAT | 07/30/2026",
+      "PDS-Maps and Drawings - LANDSCAPE PLAN | 07/30/2026",
+      "PDS-Concept Review Summary Report - CONCEPT REVIEW SUMMARY REPORT | 07/30/2026",
+      "PDS-Transmittal Agencies - SUB26-00033 TRANSMITTAL AGENCIES 8-10-26 | 08/10/2026",
+      "PDS-Correspondence - NOTIFICATION LETTER FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 08/19/2026",
+      "PDS-Maps and Drawings - LAND USE MAP | 08/25/2026",
+      "PDS-Maps and Drawings - AERIAL MAP | 08/25/2026",
+      "PDS-Maps and Drawings - ZONING MAP | 08/25/2026",
+      "PDS-Maps and Drawings - REVISED FINAL PLAT DATED 8-27-26 | 08/27/2026",
+      "PDS-Maps and Drawings - REVISED LANDSCAPE PLAN DATED 8-27-26 | 08/27/2026",
+      "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 8-27-26 | 08/27/2026",
+      "PDS-Other Small Docs - ARBORIST REPORT DATED 8-27-26 | 08/27/2026",
+      "PDS-Agency Comments - FIRE DEPARTMENT COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - PUBLIC WORKS SOLID WASTE COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - PUBLIC WORKS SEWER COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - PUBLIC WORKS STREET LIGHTS | 08/31/2026",
+      "PDS-Agency Comments - PARKS AND RECREATION DEPARTMENT COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - PUBLIC WORKS HILLSIDE DRAINAGE COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - CENTRAL DISTRICT HEALTH LETTER | 08/31/2026",
+      "PDS-Agency Comments - ACHD COMMENTS | 08/31/2026",
+      "PDS-Agency Comments - SOUTH BOISE MUTUAL IRRIGATION COMPANY COMMENTS | 08/31/2026",
+      "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING | 09/08/2026",
+      "PDS-Action Letter - ACTION LETTER FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 09/17/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00J5G&agencyCode=BOISE",
+    "project": "PLN26-00096"
+  },
+  "PLN26-00481": {
+    "status": "Planning Application Submittal",
+    "documents": [
+      "PDS-Other Small Docs - INFILL ON SMALL LOTS | 05/19/2026",
+      "PDS-Other Small Docs - INFILL ON SMALL LOTS | 05/19/2026",
+      "PDS-Application | 05/19/2026",
+      "PDS-Concept Review Summary Report - | 06/11/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00EZ0&agencyCode=BOISE",
+    "project": "PLN26-00481"
+  },
+  "CZC25-00076": {
+    "status": "Returned to Applicant",
+    "documents": [
+      "PDS-Application | 04/22/2025"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00ARJ&agencyCode=BOISE",
+    "project": "PLN25-00270"
+  },
+  "PLN25-00270": {
+    "status": "Planning Application Review",
+    "documents": [
+      "PDS-Application | 03/27/2025",
+      "PDS-Other Small Docs - PROJECT DESCRIPTION 03.27.2025 | 03/28/2025",
+      "PDS-Maps and Drawings - SITE PLAN 03.27.2025 | 03/28/2025",
+      "PDS-Other Small Docs - PARCEL A EXTERIOR BOUNDARY DESCRIPTION | 04/02/2025",
+      "PDS-Other Small Docs - PARCEL A - PAGE 2 | 04/02/2025",
+      "PDS-Other Small Docs - PARCEL B EXTERIOR BOUNDARY DESCRIPTION | 04/02/2025",
+      "PDS-Other Small Docs - PARCEL B - PAGE 2 | 04/02/2025",
+      "PDS-Other Small Docs - RECORD OF SURVEY FOR TONI JOLENE STARR TRUST | 04/02/2025",
+      "PDS-Other Small Docs - SITE PLAN FOR 2130 S GRANT AVE | 04/02/2025",
+      "PDS-Concept Review Summary Report - | 04/08/2025"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=008YE&agencyCode=BOISE",
+    "project": "PLN25-00270"
+  },
+  "ROS25-00025": {
+    "status": "Finaled",
+    "documents": [
+      "PDS-Application | 04/22/2025",
+      "PDS-Receipts - | 04/29/2025",
+      "PDS-Photos - 2130 FRONT PHOTO EXISTING HOUSE (PARCEL A) 4-29-2025 | 05/06/2025",
+      "PDS-Letter of Intent - 4-29-2025 | 05/06/2025",
+      "PDS-Other Small Docs - ISG PARCEL A DESCRIPTION 4-29-2025 | 05/06/2025",
+      "PDS-Other Small Docs - ISG PARCEL B DESCRIPTION4-29-2025 | 05/06/2025",
+      "PDS-Maps and Drawings - SURVEY SITE MAP 4-29-2025 | 05/06/2025",
+      "PDS-Other Small Docs - VEOLIA (FIRE FLOW) 4-29-2025 | 05/06/2025",
+      "PDS-Other Small Docs - VEOLIA (FIRE HYDRANT) 4-29-2025 | 05/06/2025",
+      "PDS-Maps and Drawings - RECORD OF SURVEY 4-29-2025 | 05/06/2025",
+      "PDS-Photos - 2130 FRONT PHOTO RIGHT SIDE (PARCEL B) 4-29-2025 | 05/06/2025",
+      "PDS-Statement of Legal Interest - 4-29-2025 | 05/06/2025",
+      "PDS-Photos - 4-29-2025 | 05/06/2025",
+      "PDS-Other Small Docs - DEED PACKET 2130 S GRANT 4-29-2025 | 05/06/2025",
+      "PDS-Transmittal Agencies - ROS25-00025 TRANSMITTAL AGENCIES 5-6-25 | 05/06/2025",
+      "PDS-Agency Comments - INTERMOUNTAIN GAS 5-15-2025 | 05/16/2025",
+      "PDS-Other Small Docs - AFFORDABILITY COVENANT INFO 5-29-2025 | 06/05/2025",
+      "PDS-Maps and Drawings - REVISED SITE PLAN 5-29-2025 | 06/05/2025",
+      "PDS-Maps and Drawings - REVISED SURVEY SITE MAP 5-29-2025 | 06/05/2025",
+      "PDS-Maps and Drawings - NOTICING RADIUS MAP | 06/13/2025",
+      "PDS-Legal Notice - ADMIN NOTICE | 06/13/2025",
+      "PDS-Agency Comments - PARKS COMMENTS 05-12-2025 | 06/17/2025",
+      "PDS-Agency Comments - PW SEWER COMMENTS 05-08-2025 | 06/17/2025",
+      "PDS-Agency Comments - PDS ADDRESSING COMMENTS 06-16-2025 | 06/17/2025",
+      "PDS-Action Letter - PZ_ADMINISTRATIVE APPROVAL LETTER ISSUED JUNE 17, 2025_ROS25-00025 | 06/17/2025",
+      "PDS-Receipts - | 06/24/2025",
+      "PDS-Agency Comments - REVISED ADDRESSING COMMENTS 8-04-2025 | 08/05/2025",
+      "PDS-Other Small Docs - LRPA FORM 03-23-2026 | 03/26/2026",
+      "PDS-Other Small Docs - RECORDED NOBPS 03-23-2026 | 03/26/2026",
+      "PDS-Record of Survey - RECORDED ROS 03-23-2026 | 03/26/2026",
+      "PDS-Other Small Docs - NEW TAX PARCEL NUMBERS 3-26-2026 | 03/27/2026",
+      "PDS-Other Small Docs - RECORDED IP EASEMENT 3-27-2026 | 03/27/2026",
+      "PDS-Agreements - RECORDED AFFORDABILITY COVENANT | 08/27/2026"
+    ],
+    "appeal_end": "06/27/2025",
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00AFD&agencyCode=BOISE",
+    "project": "PLN25-00270"
+  }
+}

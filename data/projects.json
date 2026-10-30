@@ -1,0 +1,767 @@
+{
+ "neighborhood": "South Boise Village",
+ "updated": "2026-10-30",
+ "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
+ "projects": [
+  {
+   "id": "PLN26-00768",
+   "address": "1113 W Garfield St",
+   "name": "Garfield Street ADU",
+   "kind": "ADU",
+   "summary": "Two-story, two-bedroom detached ADU in the side yard of a corner lot. The existing 1,309 SF house stays. The ADU entry faces S Denver Ave.",
+   "stage": "Zoning certificate approved",
+   "stage_tone": "decision",
+   "next_step": "ADU zoning certificate CZC26-00249 approved Oct 23, 2026. Appeal period ends Nov 2; building permit after that.",
+   "filed": "2026-08-14",
+   "last_activity": "2026-10-23",
+   "team": "Mode Homes (builder) · All Things Code (plans)",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "0.21 ac, corner lot",
+    "Units": "1 existing house + 1 ADU",
+    "Size": "872 SF ADU (application); 900 SF max",
+    "Height": "2 stories · ridge 23′-3⅛″ (zone max 35′)",
+    "Setbacks": "Front 20′ · street side 15′ from back of future sidewalk · side 5′ · rear 15′",
+    "Parking": "1 existing carport space for the house; none required for ADU",
+    "Access": "Existing driveway; ADU walkway to S Denver Ave"
+   },
+   "applications": [
+    {
+     "id": "CZC26-00249",
+     "type": "Zoning Certificate (ADU)",
+     "status": "Approved Oct 23, 2026"
+    }
+   ],
+   "images": [
+    {
+     "file": "garfield_elev.jpg",
+     "kind": "Elevations",
+     "caption": "Elevations E1–E4, sheet 4 (Mode Homes, 8/28/26)",
+     "source": {
+      "record": "CZC26-00249",
+      "document": "PDS-Maps and Drawings - ELEVATIONS 9.3.2026",
+      "uploaded": "09/28/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "garfield_site_rev.jpg",
+     "kind": "Site plan",
+     "caption": "Revised site plan, 10/7/26 (CZC26-00249); street-side setback dimensions updated",
+     "source": {
+      "record": "CZC26-00249",
+      "document": "PDS-Maps and Drawings - REVISED SITE PLAN 10.7.2026",
+      "uploaded": "10/23/2026",
+      "page": 1,
+      "retrieved": "2026-10-23",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 4,
+    "flag": null,
+    "note": "Approved Oct 23; appeal period ends Nov 2",
+    "dates": {
+     "0": "2026-08-26",
+     "1": "2026-08-28",
+     "3": "2026-10-21",
+     "4": "2026-10-23"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "CZC26-00249",
+   "lot_addresses": [
+    "1113 W GARFIELD ST"
+   ],
+   "notice": {
+    "kind": "Administrative decision notice",
+    "record": "CZC26-00249",
+    "document": "PDS-Maps and Drawings - NOTICING RADIUS MAP",
+    "uploaded": "10/21/2026",
+    "addresses": [
+     "1910 S DENVER AVE",
+     "1911 S DENVER AVE",
+     "1119 W GARFIELD ST",
+     "1047 W GARFIELD ST",
+     "1120 W GARFIELD ST",
+     "1817 S DENVER AVE"
+    ]
+   },
+   "flags": [
+    {
+     "type": "appeal_window",
+     "status": "open",
+     "deadline": "2026-11-02",
+     "record": "CZC26-00249",
+     "label": "Appeal window open",
+     "detail": "Staff approved the ADU on Oct 23. Anyone may appeal the decision by Nov 2, 2026 (the city's notice says fees apply)."
+    }
+   ],
+   "contact": {
+    "planner": "Mel Trout",
+    "email": "mtrout@cityofboise.org",
+    "phone": "208-608-7100",
+    "source": "CZC26-00249 legal notice"
+   }
+  },
+  {
+   "id": "PLN26-00594",
+   "address": "1911 S Manitou Ave",
+   "name": "Manitou Shop and ADU",
+   "kind": "ADU",
+   "summary": "New two-story detached building in the back yard: a 681 SF two-car garage and workshop on the ground floor with a 900 SF two-bedroom ADU. The 1,580 SF building was approved as an ADU plus an accessory structure over 1,000 SF. The existing 1,584 SF house stays.",
+   "stage": "Approval under appeal",
+   "stage_tone": "attention",
+   "next_step": "The Oct 9 approval was appealed to the Hearing Examiner on Oct 19, the last day of the appeal period. A public hearing will be scheduled; no date yet.",
+   "filed": "2026-06-18",
+   "last_activity": "2026-10-22",
+   "team": "Property owner · Kings Roofing & Contracting · AP Drafting (plans)",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "0.45 ac (232′ × 82′)",
+    "Units": "1 existing house + 1 ADU (2 bedrooms)",
+    "Size": "900 SF ADU + 681 SF garage/workshop (1,580 SF building)",
+    "Height": "2 stories · 24′-4″ (approved)",
+    "Setbacks": "About 46′ from rear line, 10′ from side fence, 50′ behind the house",
+    "Parking": "Two-car garage (two 9′ × 9′ doors); existing parking near house",
+    "Access": "Driveway from S Manitou Ave along the side of the lot"
+   },
+   "applications": [
+    {
+     "id": "CZC26-00227",
+     "type": "Zoning Certificate (ADU + accessory structure), related record",
+     "status": "Approved Oct 9, 2026"
+    },
+    {
+     "id": "CZC26-00227",
+     "type": "Appeal to Hearing Examiner",
+     "status": "Received Oct 19; hearing not scheduled"
+    }
+   ],
+   "images": [
+    {
+     "file": "manitou1911_v2_elev1.jpg",
+     "kind": "Elevations",
+     "caption": "Revised front and south elevations V2, sheet A301, 9/23/26 (CZC26-00227)",
+     "source": {
+      "record": "CZC26-00227",
+      "document": "PDS-Maps and Drawings - ELEVATIONS V2 9/23/2026",
+      "uploaded": "09/25/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "manitou1911_v2_elev2.jpg",
+     "kind": "Elevations",
+     "caption": "Revised east and west elevations V2, sheet A302, 9/23/26 (CZC26-00227)",
+     "source": {
+      "record": "CZC26-00227",
+      "document": "PDS-Maps and Drawings - ELEVATIONS V2 9/23/2026",
+      "uploaded": "09/25/2026",
+      "page": 2,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "manitou1911_v2_site.jpg",
+     "kind": "Site plan",
+     "caption": "Revised site plan V2, sheet A050, 9/23/26 (CZC26-00227)",
+     "source": {
+      "record": "CZC26-00227",
+      "document": "PDS-Maps and Drawings - SITE PLAN V2 9/23/2026",
+      "uploaded": "09/25/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 4,
+    "flag": "appealed",
+    "note": "Approved Oct 9; appealed Oct 19, hearing date not set",
+    "dates": {
+     "0": "2026-07-01",
+     "1": "2026-08-21",
+     "3": "2026-10-07",
+     "4": "2026-10-09"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "CZC26-00227",
+   "lot_addresses": [
+    "1911 S MANITOU AVE"
+   ],
+   "notice": {
+    "kind": "Administrative decision notice",
+    "record": "CZC26-00227",
+    "document": "PDS-Maps and Drawings - NOTICING RADIUS MAP",
+    "uploaded": "10/07/2026",
+    "addresses": [
+     "1919 S MANITOU AVE",
+     "1920 S MANITOU AVE",
+     "1910 S MANITOU AVE",
+     "1907 S MANITOU AVE",
+     "1903 S MANITOU AVE",
+     "1421 W GARFIELD ST",
+     "1419 W GARFIELD ST"
+    ]
+   },
+   "flags": [
+    {
+     "type": "appeal",
+     "status": "upcoming",
+     "record": "CZC26-00227",
+     "label": "Appeal filed: public hearing coming",
+     "detail": "The Oct 9 approval was appealed on Oct 19. The Hearing Examiner will hold a public hearing; the date is not set. Written testimony can be submitted before the hearing."
+    },
+    {
+     "type": "large_accessory",
+     "status": "info",
+     "record": "CZC26-00227",
+     "label": "Accessory building over 1,000 SF",
+     "detail": "The 1,580 SF two-story garage and ADU needed special approval findings for size and compatibility with the house and neighbors."
+    }
+   ],
+   "contact": {
+    "planner": "Matt Denis",
+    "email": "MDenis@cityofboise.org",
+    "phone": "208-608-7100",
+    "source": "CZC26-00227 notice and appeal letter"
+   }
+  },
+  {
+   "id": "PLN25-00824",
+   "address": "1509 W Boise Ave",
+   "name": "Bronco Square",
+   "kind": "Subdivision + homes",
+   "summary": "Splits two 25-foot residential small lots off the back of the property, facing W Highland St, and builds two narrow three-level homes. One has a 675 SF basement ADU. The existing house on Boise Ave stays.",
+   "stage": "Awaiting applications",
+   "stage_tone": "early",
+   "next_step": "Subdivision, design review, nonconforming driveway and ADU certificate still to be filed.",
+   "filed": "2025-09-18",
+   "last_activity": "2026-09-23",
+   "team": "Matson Homes",
+   "attributes": {
+    "Zoning": "R-2 · Broadway & Boise activity center",
+    "Lot": "0.20 ac → 3 lots (new lots 2,500–3,500 SF)",
+    "Units": "1 existing house + 2 new homes + 1 ADU",
+    "Size": "17′-wide homes; about 1,709 SF and 1,725 SF plus 675 SF ADU",
+    "Height": "2 stories over daylight basement",
+    "Setbacks": "Residential small lot standards; 3′ interior sides allowed",
+    "Parking": "1-car garage per new home; existing Boise Ave driveway kept",
+    "Access": "New driveways off W Highland St; Highland widened, Boise Ave sidewalk to 10′"
+   },
+   "applications": [
+    {
+     "id": "SUB26-00052",
+     "type": "Subdivision",
+     "status": "Awaiting Applications"
+    },
+    {
+     "id": "CZC26-00266",
+     "type": "Legal Non-Conforming Use (driveway)",
+     "status": "Awaiting Applications"
+    }
+   ],
+   "images": [
+    {
+     "file": "boiseave_render.jpg",
+     "kind": "Rendering",
+     "caption": "Street rendering from W Highland St, 9/10/26",
+     "source": {
+      "record": "PLN25-00824",
+      "document": "PDS-Other Small Docs - UPDATED 9.10.2026 SITE PLAN + FLOOR PLANS + RENDERS",
+      "uploaded": "09/10/2026",
+      "page": 2,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "boiseave_elev.jpg",
+     "kind": "Elevations",
+     "caption": "Four-side views of the lighter home",
+     "source": {
+      "record": "PLN25-00824",
+      "document": "PDS-Other Small Docs - UPDATED 9.10.2026 SITE PLAN + FLOOR PLANS + RENDERS",
+      "uploaded": "09/10/2026",
+      "page": 3,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "boiseave_site.jpg",
+     "kind": "Site plan",
+     "caption": "Lot layout",
+     "source": {
+      "record": "PLN25-00824",
+      "document": "PDS-Other Small Docs - UPDATED 9.10.2026 SITE PLAN + FLOOR PLANS + RENDERS",
+      "uploaded": "09/10/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 0,
+    "flag": null,
+    "note": "Applications not yet filed",
+    "dates": {
+     "0": "2026-09-17"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "PLN25-00824",
+   "lot_addresses": [
+    "1509 W BOISE AVE"
+   ],
+   "flags": [
+    {
+     "type": "subdivision",
+     "status": "upcoming",
+     "record": "SUB26-00052",
+     "label": "New lots (subdivision)",
+     "detail": "Two 25-foot residential small lots split off facing W Highland St. Subdivision and small-lot design review applications are not filed yet."
+    },
+    {
+     "type": "nonconforming",
+     "status": "upcoming",
+     "record": "CZC26-00266",
+     "label": "Nonconforming driveway",
+     "detail": "Legal nonconforming application to keep the existing Boise Ave driveway, which does not meet the 5-foot landscape buffer."
+    },
+    {
+     "type": "street_changes",
+     "status": "info",
+     "record": "PLN25-00824",
+     "label": "Street and canal changes",
+     "detail": "W Highland St to be widened with curb, gutter and sidewalk; the irrigation ditch at the rear would be piped. Boise Ave sidewalk widened to 10 feet."
+    }
+   ]
+  },
+  {
+   "id": "PLN26-00344",
+   "address": "1529 S Vermont Ave",
+   "name": "Vermont Avenue Garage ADUs",
+   "kind": "ADU",
+   "summary": "Converts part of a 2003 detached garage into a 264 SF studio ADU and adds a 516 SF one-bedroom ADU on a new second story. The addition follows the garage footprint to save a large tree; the rear-setback variance it needed was withdrawn after staff recommended denial.",
+   "stage": "Zoning certificate returned to applicant",
+   "stage_tone": "attention",
+   "next_step": "Variance CVA26-00032 withdrawn; Hearing Examiner accepted the withdrawal Sep 14, 2026. Zoning certificate still returned to applicant for resubmittal.",
+   "filed": "2026-04-14",
+   "last_activity": "2026-09-16",
+   "team": "Gregg Ostrow, AIA (architect) · All Things Code · 208 Tiny Homes",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "0.14 ac, corner lot with alley",
+    "Units": "1 existing house + 2 ADUs",
+    "Size": "780 SF total (264 SF studio + 516 SF 1-BR)",
+    "Height": "2 stories · 24′-4″ to ridge",
+    "Setbacks": "Front 15′ (20′ garage) · side 5′ · rear 15′; garage is legally nonconforming at the alley",
+    "Parking": "1 space kept in the garage for the house",
+    "Access": "Garage door off W Howe St"
+   },
+   "applications": [
+    {
+     "id": "CZC26-00163",
+     "type": "Zoning Certificate (ADU + nonconforming)",
+     "status": "Returned to Applicant"
+    },
+    {
+     "id": "CVA26-00032",
+     "type": "Variance (rear setback)",
+     "status": "Withdrawn"
+    },
+    {
+     "id": "NBR26-00071",
+     "type": "Neighborhood meeting list",
+     "status": "Complete"
+    }
+   ],
+   "images": [
+    {
+     "file": "vermont_elev.jpg",
+     "kind": "Elevations",
+     "caption": "Exterior elevations, sheet A3 (Gregg Ostrow, AIA)",
+     "source": {
+      "record": "CZC26-00163",
+      "document": "PDS-Maps and Drawings - EXTERIOR ELEVATIONS 7.24.2026",
+      "uploaded": "08/04/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    },
+    {
+     "file": "vermont_site.jpg",
+     "kind": "Site plan",
+     "caption": "Site and landscape plan, sheet A1",
+     "source": {
+      "record": "CZC26-00163",
+      "document": "PDS-Maps and Drawings - SITE PLAN 7.24.2026",
+      "uploaded": "08/04/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 2,
+    "flag": "returned",
+    "note": "Returned to applicant; variance withdrawn Sep 14",
+    "dates": {
+     "0": "2026-04-28",
+     "1": "2026-06-29"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "CZC26-00163",
+   "lot_addresses": [
+    "1529 S VERMONT AVE"
+   ],
+   "flags": [
+    {
+     "type": "variance",
+     "status": "past",
+     "record": "CVA26-00032",
+     "label": "Variance withdrawn",
+     "detail": "A variance to build the second story into the rear (alley) setback went to a Sep 14 Hearing Examiner hearing with a staff recommendation of denial, and was withdrawn."
+    },
+    {
+     "type": "nonconforming",
+     "status": "upcoming",
+     "record": "CZC26-00163",
+     "label": "Nonconforming garage",
+     "detail": "The application asks to establish the 2003 garage as legally nonconforming. It was returned to the applicant; a resubmittal may change the design."
+    },
+    {
+     "type": "neighborhood_meeting",
+     "status": "past",
+     "record": "NBR26-00071",
+     "label": "Neighborhood meeting held",
+     "detail": "A required neighborhood meeting took place before the variance application."
+    }
+   ]
+  },
+  {
+   "id": "PLN26-00096",
+   "address": "1303 W Howard St",
+   "name": "Montana Subdivision",
+   "kind": "Subdivision",
+   "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
+   "stage": "Recommended for approval",
+   "stage_tone": "decision",
+   "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
+   "filed": "2026-01-26",
+   "last_activity": "2026-09-16",
+   "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
+    "Units": "4 single-family lots",
+    "Size": "Lots about 4,073 to 5,481 SF",
+    "Height": "Not shown on plat",
+    "Setbacks": "Meets R-1C minimums per staff",
+    "Parking": "Per lot, on site",
+    "Access": "Common driveway to W Howard St"
+   },
+   "applications": [
+    {
+     "id": "SUB26-00033",
+     "type": "Preliminary & Final Plat",
+     "status": "In Review"
+    },
+    {
+     "id": "AWS26-00014",
+     "type": "Assured Water Supply",
+     "status": "Returned to Applicant"
+    },
+    {
+     "id": "NBR26-00037",
+     "type": "Neighborhood meeting list",
+     "status": "Complete"
+    }
+   ],
+   "images": [
+    {
+     "file": "howard_plat.jpg",
+     "kind": "Plat",
+     "caption": "Revised preliminary plat, 8/27/26 (no elevations filed)",
+     "source": {
+      "record": "SUB26-00033",
+      "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 8-27-26",
+      "uploaded": "08/27/2026",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 3,
+    "flag": null,
+    "note": "P&Z recommended approval; City Council next",
+    "dates": {
+     "1": "2026-07-03",
+     "3": "2026-09-14"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "SUB26-00033",
+   "lot_addresses": [
+    "1303 W HOWARD ST"
+   ],
+   "notice": {
+    "kind": "Planning & Zoning Commission hearing notice",
+    "record": "SUB26-00033",
+    "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
+    "uploaded": "",
+    "radius_ft": 500,
+    "basis": "Staff report: radius notices mailed to properties within 500 feet"
+   },
+   "flags": [
+    {
+     "type": "hearing",
+     "status": "upcoming",
+     "record": "SUB26-00033",
+     "label": "City Council hearing coming",
+     "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
+    },
+    {
+     "type": "subdivision",
+     "status": "info",
+     "record": "SUB26-00033",
+     "label": "New lots (subdivision)",
+     "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
+    }
+   ],
+   "contact": {
+    "planner": "David Moser",
+    "email": "DMoser@cityofboise.org",
+    "phone": "208-608-7087",
+    "source": "SUB26-00033 action letter"
+   }
+  },
+  {
+   "id": "PLN26-00481",
+   "address": "1607–1613 S Manitou Ave",
+   "name": "Manitou Small Lots",
+   "kind": "Small lots + ADUs",
+   "summary": "Demolishes an existing duplex, restores two original small lots of record, and builds a single-family home on each with an ADU above a detached alley-loaded garage.",
+   "stage": "Awaiting applications",
+   "stage_tone": "early",
+   "next_step": "Demolition, two ADU certificates and small-lot design review not yet posted.",
+   "filed": "2026-05-19",
+   "last_activity": "2026-06-11",
+   "team": "Property owner (applicant)",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "2 substandard lots of record",
+    "Units": "2 homes + 2 ADUs (replaces a duplex)",
+    "Size": "Floor area up to 70% of lot area",
+    "Height": "35′ / 2 stories max (neighbor is one story)",
+    "Setbacks": "3′ between the new lots; second story 8′ from street side",
+    "Parking": "1 garage space per home; none for ADUs",
+    "Access": "Alley-loaded garages, 22′ backup required"
+   },
+   "applications": [
+    {
+     "id": "CZC26-00138",
+     "type": "Zoning Certificate",
+     "status": "Awaiting Applications"
+    },
+    {
+     "id": "CZC26-00139",
+     "type": "Zoning Certificate",
+     "status": "Awaiting Applications"
+    },
+    {
+     "id": "CZC26-00140",
+     "type": "Zoning Certificate",
+     "status": "Awaiting Applications"
+    },
+    {
+     "id": "DRH26-00200",
+     "type": "Design Review",
+     "status": "Awaiting Applications"
+    }
+   ],
+   "images": [],
+   "timeline": {
+    "step": 0,
+    "flag": null,
+    "note": "Applications not yet posted",
+    "dates": {
+     "0": "2026-06-09"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "PLN26-00481",
+   "lot_addresses": [
+    "1607 S MANITOU AVE",
+    "1613 S MANITOU AVE"
+   ],
+   "flags": [
+    {
+     "type": "demolition",
+     "status": "upcoming",
+     "record": "PLN26-00481",
+     "label": "Demolition",
+     "detail": "The existing duplex would be demolished. The demolition permit application is not posted yet."
+    },
+    {
+     "type": "design_review",
+     "status": "upcoming",
+     "record": "DRH26-00200",
+     "label": "Small-lot design review",
+     "detail": "Two homes with ADUs over alley garages on restored small lots; reduced 3-foot interior setbacks between the new lots."
+    }
+   ]
+  },
+  {
+   "id": "PLN25-00270",
+   "address": "2130 S Grant Ave",
+   "name": "Grant Avenue Lot Split",
+   "kind": "Lot split",
+   "summary": "Minor land division into two parcels. The 1962 one-story house of about 1,100 SF stays on the north parcel. The south parcel would get a split-level duplex with an attached garage.",
+   "stage": "Land division in review",
+   "stage_tone": "review",
+   "next_step": "Zoning certificate for the duplex was returned to the applicant and must be refiled.",
+   "filed": "2025-03-27",
+   "last_activity": "2025-04-22",
+   "team": "Owner-applicant",
+   "attributes": {
+    "Zoning": "R-1C (Residential: Traditional)",
+    "Lot": "0.24 ac → 0.13 ac + 0.11 ac",
+    "Units": "1 existing house + duplex (2 units)",
+    "Size": "Unit 1 about 1,320 SF + basement; unit 2 about 432 SF; 480 SF garage",
+    "Height": "Split-level (no elevations filed)",
+    "Setbacks": "Existing house must meet R-1C",
+    "Parking": "Attached 24′ × 20′ garage",
+    "Access": "Driveway from S Grant Ave; new detached sidewalk required"
+   },
+   "applications": [
+    {
+     "id": "CZC25-00076",
+     "type": "Zoning Certificate",
+     "status": "Returned to Applicant"
+    },
+    {
+     "id": "ROS25-00025",
+     "type": "Record of Survey",
+     "status": "Finaled"
+    }
+   ],
+   "images": [
+    {
+     "file": "grant_site.jpg",
+     "kind": "Site plan",
+     "caption": "Hand-drawn site plan, 3/27/25 (no elevations filed)",
+     "source": {
+      "record": "PLN25-00270",
+      "document": "PDS-Maps and Drawings - SITE PLAN 03.27.2025",
+      "uploaded": "03/28/2025",
+      "page": 1,
+      "retrieved": "2026-10-22",
+      "redacted": true
+     }
+    }
+   ],
+   "timeline": {
+    "step": 2,
+    "flag": "returned",
+    "note": "Zoning certificate returned to applicant",
+    "dates": {
+     "1": "2025-04-22"
+    }
+   },
+   "first_seen": "2026-10-01",
+   "primary_app": "PLN25-00270",
+   "lot_addresses": [
+    "2130 S GRANT AVE"
+   ],
+   "flags": [
+    {
+     "type": "subdivision",
+     "status": "info",
+     "record": "PLN25-00270",
+     "label": "Lot split",
+     "detail": "Minor land division into two parcels, with a duplex planned on the new south parcel."
+    }
+   ]
+  }
+ ],
+ "inactive": [
+  {
+   "id": "PLN23-00039",
+   "address": "1614 W Highland St",
+   "note": "Variance for rear setback and ADU. Expired."
+  }
+ ],
+ "changelog": [
+  {
+   "date": "2026-10-22",
+   "project": "PLN26-00344",
+   "address": "1529 S Vermont Ave",
+   "change": "Rear-setback variance CVA26-00032 withdrawn; Hearing Examiner accepted the withdrawal Sep 14."
+  },
+  {
+   "date": "2026-10-22",
+   "project": "PLN26-00594",
+   "address": "1911 S Manitou Ave",
+   "change": "Related zoning certificate CZC26-00227 found, approved Oct 9; revised V2 elevations and site plan (Sep 23) added."
+  },
+  {
+   "date": "2026-10-22",
+   "project": "PLN26-00096",
+   "address": "1303 W Howard St",
+   "change": "Related records found: Assured Water Supply returned to applicant; neighborhood meeting complete."
+  },
+  {
+   "date": "2026-10-23",
+   "project": "PLN26-00768",
+   "address": "1113 W Garfield St",
+   "change": "ADU zoning certificate CZC26-00249 approved Oct 23; appeal period ends Nov 2. Revised site plan (Oct 7) added."
+  },
+  {
+   "date": "2026-10-23",
+   "project": "PLN26-00594",
+   "address": "1911 S Manitou Ave",
+   "change": "Approval appealed to the Hearing Examiner Oct 19; hearing not yet scheduled."
+  },
+  {
+   "date": "2026-10-24",
+   "project": "PLN26-00768",
+   "address": "1113 W Garfield St",
+   "change": "Neighbor input flags added to the report; appeal window for the Oct 23 approval is open until Nov 2."
+  }
+ ],
+ "record_urls": {
+  "AWS26-00014": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00729&agencyCode=BOISE",
+  "CVA26-00032": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00K4Y&agencyCode=BOISE",
+  "PLN26-00594": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00IY3&agencyCode=BOISE",
+  "PLN26-00344": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00AQV&agencyCode=BOISE",
+  "CZC26-00266": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00T9Q&agencyCode=BOISE",
+  "PLN26-00096": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=002FN&agencyCode=BOISE",
+  "PLN25-00270": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=008YE&agencyCode=BOISE",
+  "CZC26-00249": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00QWA&agencyCode=BOISE",
+  "PLN26-00481": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00EZ0&agencyCode=BOISE",
+  "CZC26-00227": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00OHT&agencyCode=BOISE",
+  "CZC26-00163": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00K4X&agencyCode=BOISE",
+  "SUB26-00033": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00J5G&agencyCode=BOISE",
+  "SUB26-00052": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00T9R&agencyCode=BOISE",
+  "PLN26-00768": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00PEG&agencyCode=BOISE",
+  "CZC25-00076": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00ARJ&agencyCode=BOISE",
+  "PLN25-00824": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00TJG&agencyCode=BOISE"
+ }
+}

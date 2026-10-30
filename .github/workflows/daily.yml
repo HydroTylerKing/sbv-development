@@ -1,0 +1,79 @@
+name: Daily city check
+
+# Runs every morning: checks the City of Boise for changes, rebuilds the report, saves the day's results to the
+# repository, opens an issue when something needs a person's attention, and publishes the page to GitHub Pages.
+# Also runs on every push to main (rebuild only, no city check) and on demand from the Actions tab.
+
+on:
+  schedule:
+    - cron: "55 12 * * *"   # 12:55 UTC = 6:55 am Mountain Daylight Time (5:55 am in winter)
+  workflow_dispatch:
+    inputs:
+      check_city:
+        description: "Check the City of Boise for changes (unchecked: just rebuild the page)"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+
+permissions:
+  contents: write   # save the day's results back to the repository
+  issues: write     # open an issue when the city posts something that needs attention
+  pages: write      # publish to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: sbv-report
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Check the city and rebuild the page
+        id: city
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.check_city)
+        run: python update.py --public
+
+      - name: Rebuild the page only
+        if: steps.city.conclusion == 'skipped'
+        run: python update.py --build --public
+
+      - name: Open an issue for changes that need attention
+        if: steps.city.conclusion == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python ci_tools.py notify
+
+      - name: Save the day's results to the repository
+        if: steps.city.conclusion == 'success'
+        run: python ci_tools.py commit
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

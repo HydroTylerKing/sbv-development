@@ -1,0 +1,15 @@
+# Build output (the published site is built by the workflow)
+public/
+sbv_report.html
+
+# Temporary downloads and case-page copies (may contain applicant names; never commit)
+data/cache/records/
+data/cache/related/
+data/cache/tracker.json
+downloads/
+*.pdf
+check*.png
+
+__pycache__/
+.venv/
+.DS_Store
