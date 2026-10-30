@@ -1,7 +1,8 @@
 name: Daily city check
 
-# Runs every morning: checks the City of Boise for changes, rebuilds the report, saves the day's results to the
-# repository, opens an issue when something needs a person's attention, and publishes the page to GitHub Pages.
+# Runs every morning, fully automatically: checks the City of Boise for changes, updates the report (new projects,
+# statuses, deadlines, drawings, notice areas), saves the day's results to the repository and publishes the page
+# to GitHub Pages. Nobody needs to review anything.
 # Also runs on every push to main (rebuild only, no city check) and on demand from the Actions tab.
 
 on:
@@ -19,9 +20,12 @@ on:
 
 permissions:
   contents: write   # save the day's results back to the repository
-  issues: write     # open an issue when the city posts something that needs attention
   pages: write      # publish to GitHub Pages
   id-token: write
+
+env:
+  # Black out phone numbers and emails on drawings ("false" to show them as filed with the city)
+  SBV_REDACT_CONTACTS: "true"
 
 concurrency:
   group: sbv-report
@@ -40,7 +44,10 @@ jobs:
           cache: pip
 
       - name: Install packages
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr > /dev/null
 
       - name: Check the city and rebuild the page
         id: city
@@ -50,12 +57,6 @@ jobs:
       - name: Rebuild the page only
         if: steps.city.conclusion == 'skipped'
         run: python update.py --build --public
-
-      - name: Open an issue for changes that need attention
-        if: steps.city.conclusion == 'success'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python ci_tools.py notify
 
       - name: Save the day's results to the repository
         if: steps.city.conclusion == 'success'

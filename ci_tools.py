@@ -1,7 +1,7 @@
 """Helpers for the GitHub Actions workflow (.github/workflows/daily.yml).
 
-    python ci_tools.py notify   open a GitHub issue listing today's changes that need a person's attention
-    python ci_tools.py commit   commit and push today's results (data/) back to the repository
+    python ci_tools.py commit   commit and push today's results (data/ and images/) back to the repository
+    python ci_tools.py notify   optional: open a GitHub issue listing today's changes (not used by the workflow)
 
 Uses only the workflow's built-in GITHUB_TOKEN; no other credentials are needed.
 """
@@ -64,7 +64,7 @@ def git(*args, check=True):
 def commit():
     git("config", "user.name", "github-actions[bot]")
     git("config", "user.email", "41898283+github-actions[bot]@users.noreply.github.com")
-    git("add", "data/")
+    git("add", "-A", "data/", "images/")
     if git("diff", "--cached", "--quiet", check=False).returncode == 0:
         print("No data changes to save.")
         return

@@ -1,6 +1,6 @@
 # Deploying and running the report
 
-This guide is for whoever takes over the South Boise Village development report. The repository already contains everything: code, current data, redacted drawings and the daily workflow. Deploying it means turning on GitHub Pages and confirming the daily workflow runs.
+This guide is for whoever takes over the South Boise Village development report. The repository already contains everything: code, current data, drawings and the daily workflow. Deploying it means turning on GitHub Pages and confirming the daily workflow runs. After that the report updates itself every morning; **nobody needs to check or approve anything.**
 
 **Live page:** https://hydrotylerking.github.io/sbv-development/
 **Repository:** https://github.com/HydroTylerKing/sbv-development
@@ -10,14 +10,14 @@ This guide is for whoever takes over the South Boise Village development report.
 ## 1. Get access
 
 - Ask the repository owner to add you under **Settings → Collaborators** with write access, or to transfer the repository to you (**Settings → General → Danger Zone → Transfer ownership**).
-- Click **Watch → Custom → Issues** on the repository so you get an email when the daily check opens an issue.
+- GitHub emails the repository owner automatically if a daily run ever fails. That is the only notice you'll get.
 
 ## 2. One-time setup
 
 Do these once, as someone with admin rights on the repository.
 
 1. **Turn on GitHub Pages.** Go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
-2. **Let the workflow save its results.** Go to **Settings → Actions → General → Workflow permissions** and choose **Read and write permissions**. The workflow commits each day's results back to `data/` and opens issues.
+2. **Let the workflow save its results.** Go to **Settings → Actions → General → Workflow permissions** and choose **Read and write permissions**. The workflow commits each day's results back to `data/` and `images/`.
 3. **Run it once.** Go to **Actions → Daily city check → Run workflow**, leave "Check the City of Boise for changes" ticked, and click **Run workflow**. It takes 5 to 10 minutes.
    - When it finishes, the page is live at the address above. The run's summary shows the link under **deploy**.
    - Open **Actions → the run → build → "Check the city and rebuild the page"** to read the changes report. If permits.cityofboise.org refuses GitHub's servers, you'll see repeated timeouts or 403 errors there. See Troubleshooting.
@@ -46,18 +46,19 @@ The page always shows the latest published version. Nothing on the website needs
 
 | What happens | What you do |
 |---|---|
-| Every morning the workflow checks the city, redraws the map, republishes the page and saves `data/changes/<date>.txt` | Nothing |
-| The city posted something that needs attention, such as a new project, status change, new document, appeal, notice map or hearing | The workflow opens an issue titled "City changes to review: <date>". Follow [EDITING_GUIDE.md](EDITING_GUIDE.md): read the city documents, edit `data/projects.json`, commit to `main`, then close the issue |
-| You commit to `main` | The workflow rebuilds and republishes the page within a few minutes. It doesn't re-check the city |
+| Every morning the workflow checks the city, applies the changes by rule, redraws the map, republishes the page and saves `data/changes/<date>.txt` | Nothing |
+| A new project, approval, appeal, hearing date, new drawings or a notice map appears on the city's records | Nothing: it is added to the page automatically and listed under "Recent changes" |
+| You want to add detail or fix a wording (optional) | Edit `data/projects.json` in GitHub's web editor (pencil icon) and commit. The page republishes within minutes. See [EDITING_GUIDE.md](EDITING_GUIDE.md) |
 | You want a check right now | **Actions → Daily city check → Run workflow** |
+| A run fails | GitHub emails the owner. Usually the city's site was down; the next day's run catches up. See Troubleshooting |
 
-Small text edits to `data/projects.json` can be made in GitHub's web editor: open the file and click the pencil icon. The workflow rebuilds the page after you commit. If the JSON has a mistake, the build fails and GitHub emails you. Fix it and commit again.
+Automatic text is factual but plain: new projects show what the city publishes and "Not shown" for anything it doesn't. Hand edits are kept until the city posts something new about that project.
 
-Adding drawings or notice areas needs your own computer (next section). The redaction step must be checked by eye before anything is published.
+Phone numbers and emails on drawings are blacked out automatically. To show drawings exactly as filed, set `SBV_REDACT_CONTACTS: "false"` in `.github/workflows/daily.yml`.
 
-## 5. Working on your own computer
+## 5. Working on your own computer (optional)
 
-Needed for adding drawings and notice areas, and useful for previewing edits.
+Only needed to preview edits or run an update by hand.
 
 1. Install Python 3.10+ and git, then:
    ```
@@ -71,43 +72,30 @@ Needed for adding drawings and notice areas, and useful for previewing edits.
    - Linux: `sudo apt install poppler-utils tesseract-ocr`
 3. Preview: run `python update.py --build` and open `sbv_report.html` in a browser.
 4. Always `git pull` before editing, because the workflow commits every day. Then commit and `git push`.
-
-**Adding a drawing**, in short (full rules in EDITING_GUIDE.md):
-```
-python aca.py CZC26-00227 downloads --match "ELEV"
-python redact.py "downloads/<file>.pdf" 1 images/name_elev.jpg --record CZC26-00227 --retrieved 2026-10-30 --terms "Owner Name" --preview check.png
-```
-- Open `check.png` and confirm that no private names, phone numbers, emails or home addresses remain. If OCR missed something, add `--box x0,y0,x1,y1` (fractions of the page) and run again.
-- Then add the image and its `source` to the project in `data/projects.json`.
-- Never commit downloaded PDFs. `.gitignore` already excludes them.
-
-**Adding a notice area** when a case gets a "NOTICING RADIUS MAP":
-```
-python sbvmap.py notice "downloads/<radius map>.pdf" "1911 S MANITOU AVE"
-```
-Put the printed addresses in the project's `notice.addresses`, then commit. The workflow redraws the map on its next city check.
+5. `python update.py` runs the same full update as the workflow (about 7 minutes).
 
 ## 6. Troubleshooting
 
 | Symptom | Cause and fix |
 |---|---|
-| The run fails at "Check the city" with timeouts, 403 or 503 from permits.cityofboise.org | The city's site may be slow or down; re-run later. If it fails every day, the city may be blocking GitHub's servers. Run `python update.py` on your own computer, then commit and push `data/`. The page republishes from your push |
+| The run fails at "Check the city" with timeouts, 403 or 503 from permits.cityofboise.org | The city's site may be slow or down; the next day's run catches up. If it fails every day, the city may be blocking GitHub's servers. Run `python update.py` on your own computer, then commit and push `data/` and `images/`. The page republishes from your push |
+| A notice map wasn't read ("notice map ... not read automatically" in the run log) | Some city maps have text that can't be read by machine. The project simply shows no notice area. Optional fix: enter the shaded addresses by hand (EDITING_GUIDE.md) |
 | The run fails at "Rebuild" or "Rebuild only" | Usually invalid JSON in `data/projects.json`. The log names the line. Fix it and commit |
 | The run fails at "Save the day's results" | Workflow permissions aren't set to read and write (step 2.2), or someone pushed during the run. Re-run |
 | Pages deploy fails with "Pages not enabled" | Step 2.1 |
 | No runs for a while | GitHub pauses scheduled workflows after 60 days with no repository activity. The daily commits normally prevent that. To restart, go to **Actions → Daily city check → Enable workflow** |
-| An issue lists a project as "NOT ON TRACKER" | Expected for approved projects: the city's tracker drops them once approved. The issue only opens when there are other changes |
+| A project shows as "NOT ON TRACKER" in the changes report | Expected for approved projects: the city's tracker drops them once approved. They retire on their own 30 days after the appeal period |
 | The first run reports nothing | The first run on a fresh checkout records a starting point; later runs report changes against it. This repository already has one, from Oct 25, 2026 |
 
 To stop the daily check, go to **Actions → Daily city check → ⋯ → Disable workflow**. The published page stays up.
 
 ## 7. Content rules
 
-[EDITING_GUIDE.md](EDITING_GUIDE.md) has the full rules. The three that matter most:
+The automatic rules follow these, and hand edits should too:
 - **Facts from city documents only.** Write "Not shown" rather than guess.
-- **No private information.** Never publish a private person's name, phone, email or home address, including owners, appellants and neighbors on plats. Firms, design professionals and city staff named in city notices are fine.
 - **Neutral wording.** Say what was requested, decided or scheduled, and when. No opinions.
+- **Contact details:** phone numbers and emails on drawings are blacked out automatically. Names appear as they do in the city's public files.
 
 ## 8. History
 
-Until October 2026 the report was produced and checked daily by scheduled Claude tasks and hosted on claude.ai. This repository replaces that setup and is now the only copy in charge.
+Until October 2026 the report was produced daily by scheduled Claude tasks and hosted on claude.ai. This repository replaces that setup with fixed rules that run on GitHub and is now the only copy in charge.

@@ -15,9 +15,10 @@ What it does automatically
   4. Rebuilds the lot map from the county parcel layer (data/map.json).
   5. Sets the report date to today and writes sbv_report.html.
 
-What stays manual (see README.md)
-  Reading the new documents and editing data/projects.json: stages, timelines, flags, attributes, notice areas,
-  and adding drawings with redact.py. The changes report tells you what to look at.
+  Then auto.py applies the changes to data/projects.json by fixed rules: adds new projects, updates statuses,
+  stages, timelines, flags and deadlines, adds new drawings and notice areas, and retires finished projects.
+  Nobody needs to review anything. Hand edits to data/projects.json are kept and only change when the city
+  posts something new about that project.
 """
 import datetime as dt
 import json
@@ -27,14 +28,14 @@ import subprocess
 import sys
 import time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 CACHE = os.path.join(DATA, "cache")
 PROJECTS = os.path.join(DATA, "projects.json")
 OUT = os.path.join(HERE, "sbv_report.html")
 
-ACT_ON = re.compile(r"APPEAL|NOTICING RADIUS|LEGAL NOTICE|ACTION LETTER|APPROVAL|DECISION|HEARING|PROJECT REPORT|"
-                    r"ELEV|RENDER|PLAN SET|REVISED|UPDATED|\bV\d\b|SITE PLAN|PLAT|STAFF REPORT", re.I)
 
 
 def run(script, *args, quiet=False):
@@ -62,9 +63,39 @@ def save(path, obj):
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
 
+def docs_of(snap):
+    return snap.get("documents", [])
+
+
 def appeal_end(more_details):
     m = re.search(r"Appeal Period End Date:\s*(\d{2}/\d{2}/\d{4})", more_details or "")
     return m.group(1) if m else None
+
+
+def fetch_record(rid):
+    """Status, details and document list of one city record, or None if it isn't public."""
+    time.sleep(2)  # be gentle with the city's site
+    outdir = os.path.join(CACHE, "records", rid)
+    try:
+        run("aca.py", rid, outdir, "--match", "(?!)", quiet=True)
+    except RuntimeError as e:
+        if "record page not found" in str(e):
+            return None
+        raise
+    return load(os.path.join(outdir, "record.json"), None)
+
+
+def fetch_related(pid, address, filed):
+    out = os.path.join(CACHE, "related", f"{pid}.json")
+    since = (dt.date.fromisoformat(filed or dt.date.today().isoformat()) - dt.timedelta(days=365)).isoformat()
+    run("related.py", pid, address, out, "--since", since, quiet=True)
+    return load(out, [])
+
+
+def snapshot(rec, pid):
+    docs = [" | ".join([d["cells"][0], d["cells"][-1]]) for d in rec.get("documents", [])]
+    return {"status": rec.get("status"), "documents": docs, "appeal_end": appeal_end(rec.get("more_details_text")),
+            "url": rec.get("detail_url"), "project": pid}
 
 
 def check_city(data, report):
@@ -81,7 +112,7 @@ def check_city(data, report):
     known = {p["id"] for p in projects} | {x["id"] for x in data.get("inactive", [])}
     for pid, t in on_tracker.items():
         if pid not in known:
-            report.append(f"NEW PROJECT   {pid}  {t.get('address')}  {t.get('description')}  [{t.get('status')}]  ACT ON THIS: add it to data/projects.json")
+            report.append(f"NEW PROJECT   {pid}  {t.get('address')}  {t.get('description')}  [{t.get('status')}]")
     for p in projects:
         if p["id"] not in on_tracker:
             report.append(f"NOT ON TRACKER {p['id']}  {p['address']}  (approved projects drop off the tracker; check the record status below)")
@@ -89,7 +120,7 @@ def check_city(data, report):
     # 2-3. records and documents
     prev = load(os.path.join(CACHE, "documents.json"), {})
     first_run = not prev
-    seen = {}
+    seen, records_full = {}, {}
     for p in projects:
         print(f"Checking {p['address']} ...")
         records = {p["id"], p.get("primary_app") or p["id"]} | {a["id"] for a in p.get("applications", [])}
@@ -101,23 +132,19 @@ def check_city(data, report):
                 if r["record_id"] not in records:
                     records.add(r["record_id"])
                     if r["record_id"] not in prev and not first_run:
-                        report.append(f"NEW RECORD    {p['address']}: {r['record_id']} {r.get('type', '')} [{r.get('status', '')}]  ACT ON THIS")
+                        report.append(f"NEW RECORD    {p['address']}: {r['record_id']} {r.get('type', '')} [{r.get('status', '')}]")
         except RuntimeError as e:
             report.append(f"WARNING       related records for {p['id']} not checked: {str(e).splitlines()[-1]}")
         for rid in sorted(records):
-            time.sleep(2)  # be gentle with the city's site
-            outdir = os.path.join(CACHE, "records", rid)
             try:
-                run("aca.py", rid, outdir, "--match", "(?!)", quiet=True)
+                rec = fetch_record(rid)
             except RuntimeError as e:
-                last = str(e).splitlines()[-1]
-                if "record page not found" not in last:
-                    report.append(f"WARNING       {rid} not checked: {last}")
+                report.append(f"WARNING       {rid} not checked: {str(e).splitlines()[-1]}")
                 continue
-            rec = load(os.path.join(outdir, "record.json"), {})
-            docs = [" | ".join([d["cells"][0], d["cells"][-1]]) for d in rec.get("documents", [])]
-            now = {"status": rec.get("status"), "documents": docs, "appeal_end": appeal_end(rec.get("more_details_text")),
-                   "url": rec.get("detail_url"), "project": p["id"]}
+            if rec is None:
+                continue
+            records_full[rid] = rec
+            now = snapshot(rec, p["id"])
             seen[rid] = now
             if rec.get("detail_url"):
                 data.setdefault("record_urls", {})[rid] = rec["detail_url"]
@@ -125,17 +152,18 @@ def check_city(data, report):
             if first_run or old is None:
                 continue
             if old.get("status") != now["status"]:
-                report.append(f"STATUS        {p['address']}: {rid} {old.get('status')} -> {now['status']}  ACT ON THIS")
+                report.append(f"STATUS        {p['address']}: {rid} {old.get('status')} -> {now['status']}")
             if now["appeal_end"] and now["appeal_end"] != old.get("appeal_end"):
-                report.append(f"APPEAL PERIOD {p['address']}: {rid} appeal period ends {now['appeal_end']}  ACT ON THIS")
-            for d in docs:
+                report.append(f"APPEAL PERIOD {p['address']}: {rid} appeal period ends {now['appeal_end']}")
+            for d in docs_of(now):
                 if d not in old.get("documents", []):
-                    tag = "  ACT ON THIS" if ACT_ON.search(d) else ""
-                    report.append(f"NEW DOCUMENT  {p['address']}: {rid}  {d}{tag}")
+                    report.append(f"NEW DOCUMENT  {p['address']}: {rid}  {d}")
+    before = json.loads(json.dumps(prev))
     prev.update(seen)
     save(os.path.join(CACHE, "documents.json"), prev)
     if first_run:
         report.append("FIRST RUN     Saved the current documents as the starting point. The next run will list what changed.")
+    return {"before": before, "now": seen, "records": records_full, "tracker": on_tracker, "first_run": first_run}
 
 
 def main():
@@ -144,7 +172,9 @@ def main():
         sys.exit(f"Can't read {PROJECTS}")
     report = []
     if "--build" not in sys.argv:
-        check_city(data, report)
+        state = check_city(data, report)
+        import auto
+        auto.apply(data, state, report, fetch_record=fetch_record, fetch_related=fetch_related, run=run)
         data["updated"] = dt.date.today().isoformat()
         save(PROJECTS, data)
         if "--no-map" not in sys.argv:

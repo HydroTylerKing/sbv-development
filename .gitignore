@@ -6,6 +6,7 @@ sbv_report.html
 data/cache/records/
 data/cache/related/
 data/cache/tracker.json
+data/cache/downloads/
 downloads/
 *.pdf
 check*.png

@@ -195,6 +195,24 @@ def overview_map(projects):
 
 
 
+def recent_html(data):
+    """Changes from the last 14 days, newest first, from the change log."""
+    today = dt.date.fromisoformat(data["updated"])
+    cutoff = (today - dt.timedelta(days=14)).isoformat()
+    ids = {p["id"] for p in data["projects"]}
+    items = [c for c in data.get("changelog", []) if c.get("date", "") >= cutoff]
+    items.sort(key=lambda c: c["date"], reverse=True)
+    if not items:
+        rows = '<li class="none">No changes in the last two weeks.</li>'
+    else:
+        rows = "".join(
+            f'<li><time>{dt.date.fromisoformat(c["date"]).strftime("%b %-d")}</time>'
+            f'<span>{(f"<a href=\"#{c["project"].lower()}\">{esc(c["address"])}</a>" if c["project"] in ids else esc(c["address"]))}: {esc(c["change"])}</span></li>'
+            for c in items[:25])
+    return (f'<section class="recent" aria-label="Recent changes"><h2>Recent changes</h2>'
+            f'<p>Updated automatically every morning from the City of Boise\'s public records.</p><ul>{rows}</ul></section>')
+
+
 def rec_url(rid):
     return RECORD_URLS.get(rid) or f"https://permits.cityofboise.org/CitizenAccess/Cap/GlobalSearchResults.aspx?QueryText={rid}"
 
@@ -211,7 +229,7 @@ def caption_html(i):
     ret = dt.date.fromisoformat(ret).strftime("%-m/%-d/%Y") if ret else ""
     bits = [f'page {src["page"]}' if src.get("page") and src.get("page") != 1 else "",
             f'uploaded by the city {src["uploaded"]}' if src.get("uploaded") else "",
-            f'retrieved {ret}' if ret else "", "private details redacted" if src.get("redacted") else ""]
+            f'retrieved {ret}' if ret else "", "contact details redacted" if src.get("redacted") else ""]
     meta = " · ".join(b for b in bits if b)
     return (f'<span class="cap">{esc(i["caption"])}</span>'
             f'<span class="src"><span class="lbl">Source: City of Boise Planning &amp; Development Services website</span>'
@@ -311,7 +329,7 @@ def build(data, img_dir, map_data=None):
         open_n=sum(1 for p in projects if any(f["status"] in ("open", "upcoming") and f["type"] in ("appeal_window", "appeal", "hearing", "variance") for f in p.get("flags", []))),
         updated=fmt_date(data["updated"]), n=len(projects), new_n=new_n, elev_n=units_note,
         early=stat("early"), review=stat("review") + stat("attention"), decision=stat("decision"),
-        index_rows=index_rows, sheets=sheets, overview=overview_map(projects), inactive=inactive, hood=esc(data["neighborhood"]),
+        index_rows=index_rows, sheets=sheets, overview=overview_map(projects), recent=recent_html(data), inactive=inactive, hood=esc(data["neighborhood"]),
         img_json=json.dumps(img_map).replace("</", "<\\/"))
 
 
@@ -424,6 +442,15 @@ code {{ font-family: var(--mono); font-size: .86em; }}
 .foot .team {{ grid-column: 1 / -1; border-top: 1px solid var(--rule); border-right: 0; }}
 .foot .case {{ grid-column: 1 / -1; padding: 10px 18px; border-top: 1px solid var(--rule); font-weight: 600; text-decoration: none; }}
 .foot .case:hover {{ text-decoration: underline; }}
+
+/* Recent changes */
+.recent h2 {{ font: 750 22px/1.05 var(--display); font-stretch: 78%; text-transform: uppercase; margin: 0 0 4px; }}
+.recent > p {{ margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }}
+.recent ul {{ list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }}
+.recent li {{ display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }}
+.recent li.none {{ display: block; color: var(--muted); }}
+.recent time {{ color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }}
+.recent a {{ font-weight: 600; color: var(--ink); }}
 
 /* Maps */
 .overview-map {{ display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, 1fr); gap: 24px 32px; align-items: start; }}
@@ -600,6 +627,8 @@ dialog button {{ font: 600 13px var(--body); background: #fff; color: #18211f; b
       <tbody>{index_rows}</tbody>
     </table>
   </section>
+
+  {recent}
 
   {overview}
 

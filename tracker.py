@@ -30,7 +30,8 @@ def main():
                "review_authority": a["ReviewAuthority"], "url": a["Website"]}
         p = projects.setdefault(pid, {"project_id": pid, "records": [], "centroid": None})
         if a["RecordID"] == pid:
-            p.update(address=a["PropertyAddress"], description=a["Description"], status=a["Status"], added=day(a["AddToTrackerDate"]), url=a["Website"])
+            p.update(address=a["PropertyAddress"], description=a["Description"], status=a["Status"], added=day(a["AddToTrackerDate"]), url=a["Website"],
+                     record_id=a["RecordID"], next_hearing=day(a["NextHearingDate"]), hearing_body=a["HearingBody"])
         else:
             p["records"].append(rec)
         ring = (f.get("geometry") or {}).get("rings", [[]])[0]

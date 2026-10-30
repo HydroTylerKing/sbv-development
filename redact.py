@@ -5,12 +5,10 @@ Usage:
         [--terms "Krista Laurino" "1303 W Howard"] [--box x0,y0,x1,y1 ...] [--dpi 200] [--preview PREVIEW.png]
 
 What gets blacked out:
-  * every phone number and email address found on the page (OCR, so it also works on flattened scans)
-  * every word sequence given with --terms (private owners' and neighbors' names, their home addresses)
-  * any --box region, given as fractions of the page width/height (0-1), for text OCR cannot read
-Companies and design professionals do not need to be listed; their phone numbers and emails are still
-blacked out by the automatic rule, which is harmless.
-Prints a JSON report of what was redacted. Always look at the --preview image to confirm nothing was missed.
+  * every phone number and email address found on the page (OCR, so it also works on flattened scans),
+    unless --keep-contacts is given
+  * optionally, any word sequence given with --terms and any --box region (fractions of the page, 0-1)
+Prints a JSON report of what was redacted.
 """
 import argparse, json, os, re, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFont
@@ -99,6 +97,7 @@ def main():
     ap.add_argument("--record", required=True); ap.add_argument("--retrieved", required=True)
     ap.add_argument("--terms", nargs="*", default=[]); ap.add_argument("--box", nargs="*", default=[])
     ap.add_argument("--dpi", type=int, default=200); ap.add_argument("--preview")
+    ap.add_argument("--keep-contacts", action="store_true", help="don't black out phone numbers and emails")
     a = ap.parse_args()
     with tempfile.TemporaryDirectory() as tmp:
         img = render(a.pdf, a.page, a.dpi, tmp)
@@ -106,14 +105,14 @@ def main():
     W, H = img.size
     pad = max(3, a.dpi // 40)
     rects, report = [], {"phones": [], "emails": [], "terms": [], "boxes": len(a.box)}
-    for w in words:
+    for w in ([] if a.keep_contacts else words):
         t = w["t"]
         if EMAIL.search(t):
             rects.append(union([w["box"]], pad)); report["emails"].append(t)
         elif PHONE.search(t.replace("O", "0")):
             rects.append(union([w["box"]], pad)); report["phones"].append(t)
     # phone numbers split across words, e.g. "(208) 555-1234" or "208 555 1234"
-    for i in range(len(words) - 2):
+    for i in range(0 if a.keep_contacts else len(words) - 2):
         trio = " ".join(words[i + k]["t"] for k in range(3))
         if len({words[i + k]["line"] for k in range(3)}) == 1 and re.fullmatch(r"\(?\d{3}\)?\s\d{3}[-\s]\d{4}", trio):
             rects.append(union([words[i + k]["box"] for k in range(3)], pad)); report["phones"].append(trio)
@@ -128,8 +127,9 @@ def main():
     if img.width > MAX_W:
         img = img.resize((MAX_W, round(img.height * MAX_W / img.width)), Image.LANCZOS)
     y, m, dd = a.retrieved.split("-")
+    note = "" if (a.keep_contacts and not a.terms and not a.box) else " · contact details redacted"
     img = stamp(img, f"Source: City of Boise Planning & Development Services, public case file {a.record} "
-                     f"(permits.cityofboise.org) · retrieved {int(m)}/{int(dd)}/{y} · private details redacted")
+                     f"(permits.cityofboise.org) · retrieved {int(m)}/{int(dd)}/{y}{note}")
     img.save(a.out, quality=82, optimize=True)
     if a.preview:
         img.save(a.preview)
