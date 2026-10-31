@@ -22,7 +22,9 @@ Do these once, as someone with admin rights on the repository.
    - When it finishes, the page is live at the address above. The run's summary shows the link under **deploy**.
    - Open **Actions → the run → build → "Check the city and rebuild the page"** to read the changes report. If permits.cityofboise.org refuses GitHub's servers, you'll see repeated timeouts or 403 errors there. See Troubleshooting.
 
-The workflow then runs on its own every morning at 6:55 am Mountain Daylight Time (5:55 am in winter). GitHub may start scheduled runs up to an hour late.
+The workflow then runs on its own every morning at 6:55 am Mountain Daylight Time (5:55 am in winter), with a backup run at 9:17 am in case GitHub delays or drops the first one; the backup skips itself if the morning check already ran.
+
+You must be **signed in to GitHub** with write access to see the **Run workflow** button. You can also start a full city check by committing anything to `main` with `[check city]` in the commit message.
 
 ## 3. Put it on a website
 

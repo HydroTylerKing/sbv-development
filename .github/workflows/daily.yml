@@ -3,11 +3,14 @@ name: Daily city check
 # Runs every morning, fully automatically: checks the City of Boise for changes, updates the report (new projects,
 # statuses, deadlines, drawings, notice areas), saves the day's results to the repository and publishes the page
 # to GitHub Pages. Nobody needs to review anything.
-# Also runs on every push to main (rebuild only, no city check) and on demand from the Actions tab.
+# Also runs on every push to main (rebuild only; include "[check city]" in the commit message to run the full
+# city check) and on demand from the Actions tab (Run workflow).
 
 on:
   schedule:
     - cron: "55 12 * * *"   # 12:55 UTC = 6:55 am Mountain Daylight Time (5:55 am in winter)
+    - cron: "17 15 * * *"   # backup at 9:17 am MDT; skips itself if the morning check already ran
+    # GitHub can delay or drop scheduled runs when it is busy, hence the backup.
   workflow_dispatch:
     inputs:
       check_city:
@@ -49,9 +52,17 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils tesseract-ocr > /dev/null
 
+      - name: Has today's check already run?
+        id: today
+        run: |
+          if [ -f "data/changes/$(date -u +%F).txt" ]; then echo "done=true" >> "$GITHUB_OUTPUT"; else echo "done=false" >> "$GITHUB_OUTPUT"; fi
+
       - name: Check the city and rebuild the page
         id: city
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.check_city)
+        if: >-
+          (github.event_name == 'schedule' && steps.today.outputs.done != 'true') ||
+          (github.event_name == 'workflow_dispatch' && inputs.check_city) ||
+          (github.event_name == 'push' && contains(github.event.head_commit.message, '[check city]'))
         run: python update.py --public
 
       - name: Rebuild the page only
