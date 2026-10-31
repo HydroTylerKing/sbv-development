@@ -1,8 +1,172 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
+    {
+      "id": "PLN26-00941",
+      "address": "1516 W Williams St",
+      "name": "Planning project",
+      "kind": "Project",
+      "summary": "We are proposing to demo the existing home, and split the lot into 2 lots. A 42'6\" lot on the corner and a 32'6\" interior lot. We would like to put a duplex on each lot. This project will be virtually identical to 1602 Vermont st completed earlier this year. Added automatically from the City of Boise's case records; see the case file for full details.",
+      "stage": "Awaiting applications",
+      "stage_tone": "early",
+      "next_step": "Applications have not been filed yet.",
+      "filed": "2026-10-30",
+      "last_activity": "2026-10-30",
+      "team": "Not shown",
+      "first_seen": "2026-10-31",
+      "auto": true,
+      "attributes": {
+        "Zoning": "R-1C",
+        "Lot": "Not shown",
+        "Units": "Demolish and existing SFD and associated structures. Re-establish the original lot line",
+        "Size": "Not shown",
+        "Height": "Not shown",
+        "Setbacks": "Not shown",
+        "Parking": "Parking to be accommodated off of the alley with diagonal parking per code requirements. 22' of backup space is required to the opposite side of the alley.",
+        "Access": "Not shown"
+      },
+      "applications": [],
+      "images": [
+        {
+          "file": "pln26_00941_elevations_1.jpg",
+          "kind": "Elevations",
+          "caption": "Elevations 10-19-2026, uploaded 10/19/2026 (PLN26-00941)",
+          "source": {
+            "record": "PLN26-00941",
+            "document": "PDS-Other Small Docs - ELEVATIONS 10-19-2026",
+            "uploaded": "10/19/2026",
+            "page": 1,
+            "retrieved": "2026-10-31",
+            "redacted": true
+          }
+        },
+        {
+          "file": "pln26_00941_site_plan_1.jpg",
+          "kind": "Site plan",
+          "caption": "Updated Site Plan 10-19-2026, uploaded 10/21/2026 (PLN26-00941)",
+          "source": {
+            "record": "PLN26-00941",
+            "document": "PDS-Other Small Docs - UPDATED SITE PLAN 10-19-2026",
+            "uploaded": "10/21/2026",
+            "page": 1,
+            "retrieved": "2026-10-31",
+            "redacted": true
+          }
+        }
+      ],
+      "flags": [],
+      "lot_addresses": [
+        "1516 W WILLIAMS ST"
+      ],
+      "timeline": {
+        "step": 0,
+        "dates": {
+          "0": "2026-10-31"
+        },
+        "flag": null,
+        "note": "Concept review held; applications not yet filed"
+      },
+      "primary_app": "PLN26-00941"
+    },
+    {
+      "id": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "name": "Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes",
+      "kind": "Small lots",
+      "summary": "Construction of a new two-story, two-unit townhouse. Added automatically from the City of Boise's case records; see the case file for full details.",
+      "stage": "Awaiting applications",
+      "stage_tone": "early",
+      "next_step": "Applications have not been filed yet.",
+      "filed": "2026-10-29",
+      "last_activity": "2026-10-29",
+      "team": "Not shown",
+      "first_seen": "2026-10-31",
+      "auto": true,
+      "attributes": {
+        "Zoning": "R-1C",
+        "Lot": "Not shown",
+        "Units": "1 Existing SFD to be demolished 2 proposed SFD attached (approx. 2,200 sq ft each)",
+        "Size": "Not shown",
+        "Height": "Not shown",
+        "Setbacks": "Not shown",
+        "Parking": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks. Access to be taken from the alley.",
+        "Access": "Not shown"
+      },
+      "applications": [
+        {
+          "id": "BLD26-03031",
+          "type": "Demolition permit",
+          "status": "Received"
+        }
+      ],
+      "images": [
+        {
+          "file": "pln26_00954_site_plan_1.jpg",
+          "kind": "Site plan",
+          "caption": "Site Plan And Landscape Plan, uploaded 10/14/2026 (PLN26-00954) (no elevations filed)",
+          "source": {
+            "record": "PLN26-00954",
+            "document": "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN",
+            "uploaded": "10/14/2026",
+            "page": 1,
+            "retrieved": "2026-10-31",
+            "redacted": true
+          }
+        }
+      ],
+      "flags": [
+        {
+          "type": "demolition",
+          "status": "upcoming",
+          "label": "Demolition",
+          "detail": "The project includes demolishing an existing building.",
+          "record": "PLN26-00954",
+          "key": "demolition-desc:PLN26-00954",
+          "auto": true
+        },
+        {
+          "type": "design_review",
+          "status": "upcoming",
+          "label": "Small-lot design review",
+          "detail": "Residential small lots go through the city's small-lot design review.",
+          "record": "PLN26-00954",
+          "key": "smalllot-desc:PLN26-00954",
+          "auto": true
+        },
+        {
+          "type": "waiver",
+          "status": "upcoming",
+          "label": "Waiver requested",
+          "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
+          "record": "PLN26-00954",
+          "key": "waiver-desc:PLN26-00954",
+          "auto": true
+        },
+        {
+          "type": "demolition",
+          "status": "upcoming",
+          "label": "Demolition",
+          "detail": "Demolition application BLD26-03031.",
+          "record": "BLD26-03031",
+          "key": "demolition:BLD26-03031",
+          "auto": true
+        }
+      ],
+      "lot_addresses": [
+        "1513 S MICHIGAN AVE"
+      ],
+      "timeline": {
+        "step": 0,
+        "dates": {
+          "0": "2026-10-31"
+        },
+        "flag": null,
+        "note": "Concept review held; applications not yet filed"
+      },
+      "primary_app": "PLN26-00954"
+    },
     {
       "id": "PLN26-00768",
       "address": "1113 W Garfield St",
@@ -349,6 +513,105 @@
       ]
     },
     {
+      "id": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "name": "Montana Subdivision",
+      "kind": "Subdivision",
+      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
+      "stage": "Recommended for approval",
+      "stage_tone": "decision",
+      "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
+      "filed": "2026-01-26",
+      "last_activity": "2026-09-17",
+      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
+      "attributes": {
+        "Zoning": "R-1C (Residential: Traditional)",
+        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
+        "Units": "4 single-family lots",
+        "Size": "Lots about 4,073 to 5,481 SF",
+        "Height": "Not shown on plat",
+        "Setbacks": "Meets R-1C minimums per staff",
+        "Parking": "Per lot, on site",
+        "Access": "Common driveway to W Howard St"
+      },
+      "applications": [
+        {
+          "id": "SUB26-00033",
+          "type": "Preliminary & Final Plat",
+          "status": "In Review"
+        },
+        {
+          "id": "AWS26-00014",
+          "type": "Assured Water Supply",
+          "status": "Returned to Applicant"
+        },
+        {
+          "id": "NBR26-00037",
+          "type": "Neighborhood meeting list",
+          "status": "Complete"
+        }
+      ],
+      "images": [
+        {
+          "file": "howard_plat.jpg",
+          "kind": "Plat",
+          "caption": "Revised preliminary plat, 8/27/26 (no elevations filed)",
+          "source": {
+            "record": "SUB26-00033",
+            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 8-27-26",
+            "uploaded": "08/27/2026",
+            "page": 1,
+            "retrieved": "2026-10-22",
+            "redacted": true
+          }
+        }
+      ],
+      "timeline": {
+        "step": 3,
+        "flag": null,
+        "note": "P&Z recommended approval; City Council next",
+        "dates": {
+          "1": "2026-07-03",
+          "3": "2026-09-14"
+        }
+      },
+      "first_seen": "2026-10-01",
+      "primary_app": "SUB26-00033",
+      "lot_addresses": [
+        "1303 W HOWARD ST"
+      ],
+      "notice": {
+        "kind": "Planning & Zoning Commission hearing notice",
+        "record": "SUB26-00033",
+        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
+        "uploaded": "",
+        "radius_ft": 500,
+        "basis": "Staff report: radius notices mailed to properties within 500 feet"
+      },
+      "flags": [
+        {
+          "type": "hearing",
+          "status": "upcoming",
+          "record": "SUB26-00033",
+          "label": "City Council hearing coming",
+          "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
+        },
+        {
+          "type": "subdivision",
+          "status": "info",
+          "record": "SUB26-00033",
+          "label": "New lots (subdivision)",
+          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
+        }
+      ],
+      "contact": {
+        "planner": "David Moser",
+        "email": "DMoser@cityofboise.org",
+        "phone": "208-608-7087",
+        "source": "SUB26-00033 action letter"
+      }
+    },
+    {
       "id": "PLN26-00344",
       "address": "1529 S Vermont Ave",
       "name": "Vermont Avenue Garage ADUs",
@@ -454,53 +717,48 @@
       ]
     },
     {
-      "id": "PLN26-00096",
-      "address": "1303 W Howard St",
-      "name": "Montana Subdivision",
-      "kind": "Subdivision",
-      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
-      "stage": "Recommended for approval",
-      "stage_tone": "decision",
-      "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
-      "filed": "2026-01-26",
-      "last_activity": "2026-09-16",
-      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
+      "id": "PLN25-00270",
+      "address": "2130 S Grant Ave",
+      "name": "Grant Avenue Lot Split",
+      "kind": "Lot split",
+      "summary": "Minor land division into two parcels. The 1962 one-story house of about 1,100 SF stays on the north parcel. The south parcel would get a split-level duplex with an attached garage.",
+      "stage": "Land division in review",
+      "stage_tone": "review",
+      "next_step": "Zoning certificate for the duplex was returned to the applicant and must be refiled.",
+      "filed": "2025-03-27",
+      "last_activity": "2026-08-27",
+      "team": "Owner-applicant",
       "attributes": {
         "Zoning": "R-1C (Residential: Traditional)",
-        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
-        "Units": "4 single-family lots",
-        "Size": "Lots about 4,073 to 5,481 SF",
-        "Height": "Not shown on plat",
-        "Setbacks": "Meets R-1C minimums per staff",
-        "Parking": "Per lot, on site",
-        "Access": "Common driveway to W Howard St"
+        "Lot": "0.24 ac → 0.13 ac + 0.11 ac",
+        "Units": "1 existing house + duplex (2 units)",
+        "Size": "Unit 1 about 1,320 SF + basement; unit 2 about 432 SF; 480 SF garage",
+        "Height": "Split-level (no elevations filed)",
+        "Setbacks": "Existing house must meet R-1C",
+        "Parking": "Attached 24′ × 20′ garage",
+        "Access": "Driveway from S Grant Ave; new detached sidewalk required"
       },
       "applications": [
         {
-          "id": "SUB26-00033",
-          "type": "Preliminary & Final Plat",
-          "status": "In Review"
-        },
-        {
-          "id": "AWS26-00014",
-          "type": "Assured Water Supply",
+          "id": "CZC25-00076",
+          "type": "Zoning Certificate",
           "status": "Returned to Applicant"
         },
         {
-          "id": "NBR26-00037",
-          "type": "Neighborhood meeting list",
-          "status": "Complete"
+          "id": "ROS25-00025",
+          "type": "Record of Survey",
+          "status": "Finaled"
         }
       ],
       "images": [
         {
-          "file": "howard_plat.jpg",
-          "kind": "Plat",
-          "caption": "Revised preliminary plat, 8/27/26 (no elevations filed)",
+          "file": "grant_site.jpg",
+          "kind": "Site plan",
+          "caption": "Hand-drawn site plan, 3/27/25 (no elevations filed)",
           "source": {
-            "record": "SUB26-00033",
-            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 8-27-26",
-            "uploaded": "08/27/2026",
+            "record": "PLN25-00270",
+            "document": "PDS-Maps and Drawings - SITE PLAN 03.27.2025",
+            "uploaded": "03/28/2025",
             "page": 1,
             "retrieved": "2026-10-22",
             "redacted": true
@@ -508,49 +766,27 @@
         }
       ],
       "timeline": {
-        "step": 3,
-        "flag": null,
-        "note": "P&Z recommended approval; City Council next",
+        "step": 2,
+        "flag": "returned",
+        "note": "Zoning certificate returned to applicant",
         "dates": {
-          "1": "2026-07-03",
-          "3": "2026-09-14"
+          "1": "2025-04-22"
         }
       },
       "first_seen": "2026-10-01",
-      "primary_app": "SUB26-00033",
+      "primary_app": "PLN25-00270",
       "lot_addresses": [
-        "1303 W HOWARD ST"
+        "2130 S GRANT AVE"
       ],
-      "notice": {
-        "kind": "Planning & Zoning Commission hearing notice",
-        "record": "SUB26-00033",
-        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
-        "uploaded": "",
-        "radius_ft": 500,
-        "basis": "Staff report: radius notices mailed to properties within 500 feet"
-      },
       "flags": [
-        {
-          "type": "hearing",
-          "status": "upcoming",
-          "record": "SUB26-00033",
-          "label": "City Council hearing coming",
-          "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
-        },
         {
           "type": "subdivision",
           "status": "info",
-          "record": "SUB26-00033",
-          "label": "New lots (subdivision)",
-          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
+          "record": "PLN25-00270",
+          "label": "Lot split",
+          "detail": "Minor land division into two parcels, with a duplex planned on the new south parcel."
         }
-      ],
-      "contact": {
-        "planner": "David Moser",
-        "email": "DMoser@cityofboise.org",
-        "phone": "208-608-7087",
-        "source": "SUB26-00033 action letter"
-      }
+      ]
     },
     {
       "id": "PLN26-00481",
@@ -627,78 +863,6 @@
           "detail": "Two homes with ADUs over alley garages on restored small lots; reduced 3-foot interior setbacks between the new lots."
         }
       ]
-    },
-    {
-      "id": "PLN25-00270",
-      "address": "2130 S Grant Ave",
-      "name": "Grant Avenue Lot Split",
-      "kind": "Lot split",
-      "summary": "Minor land division into two parcels. The 1962 one-story house of about 1,100 SF stays on the north parcel. The south parcel would get a split-level duplex with an attached garage.",
-      "stage": "Land division in review",
-      "stage_tone": "review",
-      "next_step": "Zoning certificate for the duplex was returned to the applicant and must be refiled.",
-      "filed": "2025-03-27",
-      "last_activity": "2025-04-22",
-      "team": "Owner-applicant",
-      "attributes": {
-        "Zoning": "R-1C (Residential: Traditional)",
-        "Lot": "0.24 ac → 0.13 ac + 0.11 ac",
-        "Units": "1 existing house + duplex (2 units)",
-        "Size": "Unit 1 about 1,320 SF + basement; unit 2 about 432 SF; 480 SF garage",
-        "Height": "Split-level (no elevations filed)",
-        "Setbacks": "Existing house must meet R-1C",
-        "Parking": "Attached 24′ × 20′ garage",
-        "Access": "Driveway from S Grant Ave; new detached sidewalk required"
-      },
-      "applications": [
-        {
-          "id": "CZC25-00076",
-          "type": "Zoning Certificate",
-          "status": "Returned to Applicant"
-        },
-        {
-          "id": "ROS25-00025",
-          "type": "Record of Survey",
-          "status": "Finaled"
-        }
-      ],
-      "images": [
-        {
-          "file": "grant_site.jpg",
-          "kind": "Site plan",
-          "caption": "Hand-drawn site plan, 3/27/25 (no elevations filed)",
-          "source": {
-            "record": "PLN25-00270",
-            "document": "PDS-Maps and Drawings - SITE PLAN 03.27.2025",
-            "uploaded": "03/28/2025",
-            "page": 1,
-            "retrieved": "2026-10-22",
-            "redacted": true
-          }
-        }
-      ],
-      "timeline": {
-        "step": 2,
-        "flag": "returned",
-        "note": "Zoning certificate returned to applicant",
-        "dates": {
-          "1": "2025-04-22"
-        }
-      },
-      "first_seen": "2026-10-01",
-      "primary_app": "PLN25-00270",
-      "lot_addresses": [
-        "2130 S GRANT AVE"
-      ],
-      "flags": [
-        {
-          "type": "subdivision",
-          "status": "info",
-          "record": "PLN25-00270",
-          "label": "Lot split",
-          "detail": "Minor land division into two parcels, with a duplex planned on the new south parcel."
-        }
-      ]
     }
   ],
   "inactive": [
@@ -738,6 +902,30 @@
       "project": "PLN26-00594",
       "address": "1911 S Manitou Ave",
       "change": "Approval appealed to the Hearing Examiner Oct 19; hearing not yet scheduled."
+    },
+    {
+      "date": "2026-10-31",
+      "project": "PLN26-00941",
+      "address": "1516 W Williams St",
+      "change": "New project added automatically: Planning project."
+    },
+    {
+      "date": "2026-10-31",
+      "project": "PLN26-00941",
+      "address": "1516 W Williams St",
+      "change": "Drawings updated from PDS-Other Small Docs - ELEVATIONS 10-19-2026, PDS-Other Small Docs - UPDATED SITE PLAN 10-19-2026."
+    },
+    {
+      "date": "2026-10-31",
+      "project": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "change": "New project added automatically: Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes."
+    },
+    {
+      "date": "2026-10-31",
+      "project": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "change": "Drawings updated from PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN."
     }
   ],
   "record_urls": {
@@ -756,6 +944,14 @@
     "SUB26-00052": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00T9R&agencyCode=BOISE",
     "PLN26-00768": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00PEG&agencyCode=BOISE",
     "CZC25-00076": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00ARJ&agencyCode=BOISE",
-    "PLN25-00824": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00TJG&agencyCode=BOISE"
+    "PLN25-00824": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00TJG&agencyCode=BOISE",
+    "CZC26-00206": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00MQF&agencyCode=BOISE",
+    "PLN26-00567": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00HV1&agencyCode=BOISE",
+    "NBR26-00071": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00D8X&agencyCode=BOISE",
+    "NBR26-00037": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=0072D&agencyCode=BOISE",
+    "ROS25-00025": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00AFD&agencyCode=BOISE",
+    "PLN26-00941": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00VE7&agencyCode=BOISE",
+    "PLN26-00954": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00VN3&agencyCode=BOISE",
+    "BLD26-03031": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00US2&agencyCode=BOISE"
   }
 }

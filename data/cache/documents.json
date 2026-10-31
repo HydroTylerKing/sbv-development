@@ -368,5 +368,45 @@
     "appeal_end": "06/27/2025",
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=25CAP&capID2=00000&capID3=00AFD&agencyCode=BOISE",
     "project": "PLN25-00270"
+  },
+  "PLN26-00941": {
+    "status": "Pending Application Submittal",
+    "documents": [
+      "PDS-Other Small Docs - PROPOSED SITE PLAN | 10/12/2026",
+      "PDS-Application | 10/12/2026",
+      "PDS-Other Small Docs - FLOOR PLANS 10-19-2026 | 10/19/2026",
+      "PDS-Other Small Docs - FLOOR PLANS 10-19-2026 | 10/19/2026",
+      "PDS-Other Small Docs - ELEVATIONS 10-19-2026 | 10/19/2026",
+      "PDS-Other Small Docs - ELEVATIONS 10-19-2026 | 10/19/2026",
+      "PDS-Other Small Docs - UPDATED SITE PLAN 10-19-2026 | 10/21/2026",
+      "PDS-Concept Review Summary Report - | 10/30/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00VE7&agencyCode=BOISE",
+    "project": "PLN26-00941"
+  },
+  "PLN26-00954": {
+    "status": "Pending Application Submittal",
+    "documents": [
+      "PDS-Other Small Docs - PROJECT DESCRIPTION FOR TWO ATTACHED TOWNHOUSES AT 1513 S MICHIGAN AVE | 10/14/2026",
+      "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN | 10/14/2026",
+      "PDS-Application | 10/14/2026",
+      "PDS-Concept Review Summary Report - | 10/29/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00VN3&agencyCode=BOISE",
+    "project": "PLN26-00954"
+  },
+  "BLD26-03031": {
+    "status": "Received",
+    "documents": [
+      "PDS-Demolitions - BED PHOTO | 10/07/2026",
+      "PDS-Demolitions - KITCHEN PHOTO | 10/07/2026",
+      "PDS-Demolitions - LIVING PHOTO | 10/07/2026",
+      "PDS-Permit Application | 10/07/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00US2&agencyCode=BOISE",
+    "project": "PLN26-00954"
   }
 }
