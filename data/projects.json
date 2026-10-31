@@ -6,8 +6,8 @@
     {
       "id": "PLN26-00941",
       "address": "1516 W Williams St",
-      "name": "Planning project",
-      "kind": "Project",
+      "name": "Lot split + duplexes",
+      "kind": "Lot split + duplexes",
       "summary": "We are proposing to demo the existing home, and split the lot into 2 lots. A 42'6\" lot on the corner and a 32'6\" interior lot. We would like to put a duplex on each lot. This project will be virtually identical to 1602 Vermont st completed earlier this year. Added automatically from the City of Boise's case records; see the case file for full details.",
       "stage": "Awaiting applications",
       "stage_tone": "early",
@@ -56,7 +56,26 @@
           }
         }
       ],
-      "flags": [],
+      "flags": [
+        {
+          "type": "demolition",
+          "status": "upcoming",
+          "label": "Demolition",
+          "detail": "The project includes demolishing an existing building.",
+          "record": "PLN26-00941",
+          "key": "demolition-desc:PLN26-00941",
+          "auto": true
+        },
+        {
+          "type": "subdivision",
+          "status": "upcoming",
+          "label": "Lot split",
+          "detail": "The project would divide the property into separate lots.",
+          "record": "PLN26-00941",
+          "key": "split-desc:PLN26-00941",
+          "auto": true
+        }
+      ],
       "lot_addresses": [
         "1516 W WILLIAMS ST"
       ],
@@ -121,9 +140,9 @@
           "type": "demolition",
           "status": "upcoming",
           "label": "Demolition",
-          "detail": "The project includes demolishing an existing building.",
-          "record": "PLN26-00954",
-          "key": "demolition-desc:PLN26-00954",
+          "detail": "Demolition application BLD26-03031.",
+          "record": "BLD26-03031",
+          "key": "demolition:BLD26-03031",
           "auto": true
         },
         {
@@ -142,15 +161,6 @@
           "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
           "record": "PLN26-00954",
           "key": "waiver-desc:PLN26-00954",
-          "auto": true
-        },
-        {
-          "type": "demolition",
-          "status": "upcoming",
-          "label": "Demolition",
-          "detail": "Demolition application BLD26-03031.",
-          "record": "BLD26-03031",
-          "key": "demolition:BLD26-03031",
           "auto": true
         }
       ],

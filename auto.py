@@ -345,10 +345,24 @@ def brief(text, limit=200):
     return out[:limit + 40]
 
 
+def dedupe_flags(p):
+    """One flag per kind for demolition / design review / lot split, preferring the one tied to a real application."""
+    seen, out = {}, []
+    for f in sorted(p.get("flags", []), key=lambda f: "-desc:" in (f.get("key") or "")):
+        k = f.get("type") if f.get("type") in ("demolition", "design_review", "subdivision", "variance", "waiver") else id(f)
+        if k in seen:
+            continue
+        seen[k] = True
+        out.append(f)
+    p["flags"] = out
+
+
 def description_flags(p, desc, rid):
     d = (desc or "").lower()
-    if "demoli" in d:
+    if re.search(r"\bdemo(lish\w*|lition)?\b", d):
         set_flag(p, "demolition", "upcoming", "Demolition", "The project includes demolishing an existing building.", rid, key=f"demolition-desc:{rid}")
+    if re.search(r"split (the|this|a|our)? ?lot|lot split|re-?establish\w* (the )?original lot line", d):
+        set_flag(p, "subdivision", "upcoming", "Lot split", "The project would divide the property into separate lots.", rid, key=f"split-desc:{rid}")
     if "small lot" in d:
         set_flag(p, "design_review", "upcoming", "Small-lot design review",
                  "Residential small lots go through the city's small-lot design review.", rid, key=f"smalllot-desc:{rid}")
@@ -360,6 +374,8 @@ def description_flags(p, desc, rid):
 
 def kind_of(desc, rids):
     d = (desc or "").lower()
+    if re.search(r"split (the|this|a|our)? ?lot|lot split|land division|re-?establish\w* (the )?original lot", d):
+        return "Lot split + duplexes" if "duplex" in d else ("Lot split + ADU" if "adu" in d else "Lot split")
     if "small lot" in d:
         return "Small lots + ADUs" if "adu" in d else "Small lots"
     if "townho" in d or "attached" in d:
@@ -411,7 +427,6 @@ def new_project(pid, t, data, fetch_record, fetch_related, run, report):
     children = [rid for rid in recs if rid != pid]
     main = next((r for r in children if r[:3] in ("SUB", "CZC", "CUP", "CVA", "CAR", "PUD", "DRH") and not DONE.search(recs[r].get("status") or "")), None)
     p["primary_app"] = main or pid
-    p["kind"] = kind_of(t.get("description"), list(recs))
     desc = (parent or {}).get("project_description") or t.get("description") or ""
     desc = desc.strip()
     if desc.upper().startswith(p["lot_addresses"][0]):
@@ -420,6 +435,9 @@ def new_project(pid, t, data, fetch_record, fetch_related, run, report):
     cr = concept_review(run, recs)
     vision = cr.get("Vision/Project Description")
     text = vision or desc
+    p["kind"] = kind_of(" ".join(x for x in [t.get("description"), vision, desc] if x), list(recs))
+    if not t.get("description"):
+        p["name"] = p["kind"] if p["kind"] != "Project" else (brief(text, 70) or "Planning project")
     p["summary"] = (text[0].upper() + text[1:] if text else "Planning project") + ("" if text.endswith(".") else ".") + \
         " Added automatically from the City of Boise's case records; see the case file for full details."
     src = recs.get(main) or parent or {}
@@ -456,6 +474,7 @@ def new_project(pid, t, data, fetch_record, fetch_related, run, report):
                 notice = (rid, entry)
             if DRAWING.search(nm) or SITEPLAN.search(nm):
                 queue.append((rid, entry))
+    dedupe_flags(p)
     data["projects"].append(p)
     log(data, p, f"New project added automatically: {p['name']}.", report)
     if queue:
