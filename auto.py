@@ -541,9 +541,10 @@ def apply(data, state, report, fetch_record, fetch_related, run):
             cur, old = now[rid], before.get(rid)
             rec = recs.get(rid)
             if rid != p["id"] and rid not in app_ids and old is None and not DONE.search(cur.get("status") or ""):
-                p.setdefault("applications", []).append({"id": rid, "type": label(rid), "status": cur.get("status") or ""})
-                record_flags(p, rid, label(rid), cur.get("status"))
-                log(data, p, f"New related record {rid} ({label(rid).lower()}).", report)
+                rtype = cur.get("type") or label(rid)
+                p.setdefault("applications", []).append({"id": rid, "type": rtype, "status": cur.get("status") or ""})
+                record_flags(p, rid, rtype, cur.get("status"))
+                log(data, p, f"New application filed: {rid} ({rtype.lower()}).", report)
             if old is None:
                 continue
             if cur.get("status") != old.get("status") and cur.get("status"):

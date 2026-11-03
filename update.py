@@ -124,11 +124,13 @@ def check_city(data, report):
     for p in projects:
         print(f"Checking {p['address']} ...")
         records = {p["id"], p.get("primary_app") or p["id"]} | {a["id"] for a in p.get("applications", [])}
+        rows = {}
         try:
             run("related.py", p["id"], (p.get("lot_addresses") or [p["address"]])[0],
                 os.path.join(CACHE, "related", f"{p['id']}.json"), "--since",
                 (dt.date.fromisoformat(p.get("filed") or today) - dt.timedelta(days=365)).isoformat(), quiet=True)
             for r in load(os.path.join(CACHE, "related", f"{p['id']}.json"), []):
+                rows[r["record_id"]] = r
                 if r["record_id"] not in records:
                     records.add(r["record_id"])
                     if r["record_id"] not in prev and not first_run:
@@ -142,6 +144,11 @@ def check_city(data, report):
                 report.append(f"WARNING       {rid} not checked: {str(e).splitlines()[-1]}")
                 continue
             if rec is None:
+                # Not public on the permit site yet: keep what the city's record list says about it
+                row = rows.get(rid)
+                if row:
+                    seen[rid] = {"status": row.get("status") or "Received", "documents": [], "appeal_end": None,
+                                 "url": None, "project": p["id"], "type": row.get("type")}
                 continue
             records_full[rid] = rec
             now = snapshot(rec, p["id"])

@@ -8,9 +8,9 @@ name: Daily city check
 
 on:
   schedule:
-    - cron: "55 12 * * *"   # 12:55 UTC = 6:55 am Mountain Daylight Time (5:55 am in winter)
-    - cron: "17 15 * * *"   # backup at 9:17 am MDT; skips itself if the morning check already ran
-    # GitHub can delay or drop scheduled runs when it is busy, hence the backup.
+    - cron: "55 12 * * *"      # 12:55 UTC = 5:55 am Mountain Standard Time (6:55 am in summer)
+    - cron: "17 14-23 * * *"   # hourly backups through the afternoon; each stops at once if today's check already ran
+    # GitHub starts scheduled runs on a best-effort basis and can delay them by hours, hence the backups.
   workflow_dispatch:
     inputs:
       check_city:
@@ -38,35 +38,42 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      publish: ${{ steps.today.outputs.skip != 'true' }}
     steps:
       - uses: actions/checkout@v4
 
+      - name: Has today's check already run?
+        id: today
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "data/changes/$(date -u +%F).txt" ]; then
+            echo "Today's check already ran; nothing to do."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.today.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Install packages
+        if: steps.today.outputs.skip != 'true'
         run: |
           pip install -r requirements.txt
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils tesseract-ocr > /dev/null
 
-      - name: Has today's check already run?
-        id: today
-        run: |
-          if [ -f "data/changes/$(date -u +%F).txt" ]; then echo "done=true" >> "$GITHUB_OUTPUT"; else echo "done=false" >> "$GITHUB_OUTPUT"; fi
-
       - name: Check the city and rebuild the page
         id: city
         if: >-
-          (github.event_name == 'schedule' && steps.today.outputs.done != 'true') ||
+          (github.event_name == 'schedule' && steps.today.outputs.skip != 'true') ||
           (github.event_name == 'workflow_dispatch' && inputs.check_city) ||
           (github.event_name == 'push' && contains(github.event.head_commit.message, '[check city]'))
         run: python update.py --public
 
       - name: Rebuild the page only
-        if: steps.city.conclusion == 'skipped'
+        if: steps.city.conclusion == 'skipped' && steps.today.outputs.skip != 'true'
         run: python update.py --build --public
 
       - name: Save the day's results to the repository
@@ -74,13 +81,16 @@ jobs:
         run: python ci_tools.py commit
 
       - uses: actions/configure-pages@v5
+        if: steps.today.outputs.skip != 'true'
 
       - uses: actions/upload-pages-artifact@v3
+        if: steps.today.outputs.skip != 'true'
         with:
           path: public
 
   deploy:
     needs: build
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
