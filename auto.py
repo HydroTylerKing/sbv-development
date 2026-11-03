@@ -565,6 +565,7 @@ def apply(data, state, report, fetch_record, fetch_related, run):
             allc = [(r, e) for r in rids for e in now[r].get("documents", []) if DRAWING.search(doc_name(e)) or SITEPLAN.search(doc_name(e))]
             refresh_drawings(p, allc, run, data, report)
         upkeep(p, data, report, tracker, now)
+        dedupe_flags(p)
 
     # hearing dates published on the tracker
     for pid, t in tracker.items():

@@ -27,6 +27,8 @@ permissions:
   id-token: write
 
 env:
+  # Dates (today's check, deadlines, the change log) follow Boise time, not the runner's UTC clock
+  TZ: America/Boise
   # Black out phone numbers and emails on drawings ("false" to show them as filed with the city)
   SBV_REDACT_CONTACTS: "true"
 
@@ -46,7 +48,7 @@ jobs:
       - name: Has today's check already run?
         id: today
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "data/changes/$(date -u +%F).txt" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "data/changes/$(date +%F).txt" ]; then
             echo "Today's check already ran; nothing to do."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
