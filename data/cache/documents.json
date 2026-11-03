@@ -408,5 +408,53 @@
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00US2&agencyCode=BOISE",
     "project": "PLN26-00954"
+  },
+  "ROS26-00059": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00941",
+    "type": "Record of Survey"
+  },
+  "DRH26-00357": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00954",
+    "type": "Design Review"
+  },
+  "CZC26-00138": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00481",
+    "type": "Zoning Certificate"
+  },
+  "CZC26-00139": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00481",
+    "type": "Zoning Certificate"
+  },
+  "CZC26-00140": {
+    "status": "Received",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00481",
+    "type": "Zoning Certificate"
+  },
+  "DRH26-00200": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-00481",
+    "type": "Design Review"
   }
 }

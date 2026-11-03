@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -27,7 +27,13 @@
         "Parking": "Parking to be accommodated off of the alley with diagonal parking per code requirements. 22' of backup space is required to the opposite side of the alley.",
         "Access": "Not shown"
       },
-      "applications": [],
+      "applications": [
+        {
+          "id": "ROS26-00059",
+          "type": "Record of Survey",
+          "status": "Pending Application Submittal"
+        }
+      ],
       "images": [
         {
           "file": "pln26_00941_elevations_1.jpg",
@@ -118,6 +124,11 @@
           "id": "BLD26-03031",
           "type": "Demolition permit",
           "status": "Received"
+        },
+        {
+          "id": "DRH26-00357",
+          "type": "Design Review",
+          "status": "Pending Application Submittal"
         }
       ],
       "images": [
@@ -162,6 +173,15 @@
           "record": "PLN26-00954",
           "key": "waiver-desc:PLN26-00954",
           "auto": true
+        },
+        {
+          "type": "design_review",
+          "status": "upcoming",
+          "label": "Design review",
+          "detail": "Design review application DRH26-00357.",
+          "record": "DRH26-00357",
+          "key": "design_review:DRH26-00357",
+          "auto": true
         }
       ],
       "lot_addresses": [
@@ -185,7 +205,7 @@
       "summary": "Two-story, two-bedroom detached ADU in the side yard of a corner lot. The existing 1,309 SF house stays. The ADU entry faces S Denver Ave.",
       "stage": "Zoning certificate approved",
       "stage_tone": "decision",
-      "next_step": "ADU zoning certificate CZC26-00249 approved Oct 23, 2026. Appeal period ends Nov 2; building permit after that.",
+      "next_step": "Approved; the appeal period ended Nov 2, 2026 with no appeal posted. Building permits are next.",
       "filed": "2026-08-14",
       "last_activity": "2026-10-23",
       "team": "Mode Homes (builder) · All Things Code (plans)",
@@ -235,14 +255,15 @@
         }
       ],
       "timeline": {
-        "step": 4,
+        "step": 5,
         "flag": null,
-        "note": "Approved Oct 23; appeal period ends Nov 2",
+        "note": "Approved; appeal period ended Nov 2",
         "dates": {
           "0": "2026-08-26",
           "1": "2026-08-28",
           "3": "2026-10-21",
-          "4": "2026-10-23"
+          "4": "2026-10-23",
+          "5": "2026-11-03"
         }
       },
       "first_seen": "2026-10-01",
@@ -267,7 +288,7 @@
       "flags": [
         {
           "type": "appeal_window",
-          "status": "open",
+          "status": "past",
           "deadline": "2026-11-02",
           "record": "CZC26-00249",
           "label": "Appeal window open",
@@ -936,6 +957,24 @@
       "project": "PLN26-00954",
       "address": "1513 S Michigan Ave",
       "change": "Drawings updated from PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN."
+    },
+    {
+      "date": "2026-11-03",
+      "project": "PLN26-00941",
+      "address": "1516 W Williams St",
+      "change": "New application filed: ROS26-00059 (record of survey)."
+    },
+    {
+      "date": "2026-11-03",
+      "project": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "change": "New application filed: DRH26-00357 (design review)."
+    },
+    {
+      "date": "2026-11-03",
+      "project": "PLN26-00768",
+      "address": "1113 W Garfield St",
+      "change": "Appeal period ended with no appeal posted."
     }
   ],
   "record_urls": {
