@@ -386,7 +386,7 @@
     "project": "PLN26-00941"
   },
   "PLN26-00954": {
-    "status": "Pending Application Submittal",
+    "status": "Planning Application Review",
     "documents": [
       "PDS-Other Small Docs - PROJECT DESCRIPTION FOR TWO ATTACHED TOWNHOUSES AT 1513 S MICHIGAN AVE | 10/14/2026",
       "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN | 10/14/2026",
@@ -418,12 +418,13 @@
     "type": "Record of Survey"
   },
   "DRH26-00357": {
-    "status": "Pending Application Submittal",
-    "documents": [],
+    "status": "Applicant Upload",
+    "documents": [
+      "PDS-Application | 11/03/2026"
+    ],
     "appeal_end": null,
-    "url": null,
-    "project": "PLN26-00954",
-    "type": "Design Review"
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00XBJ&agencyCode=BOISE",
+    "project": "PLN26-00954"
   },
   "CZC26-00138": {
     "status": "Pending Application Submittal",

@@ -1,0 +1,5 @@
+NOT ON TRACKER PLN26-00768  1113 W Garfield St  (approved projects drop off the tracker; check the record status below)
+STATUS        1513 S Michigan Ave: DRH26-00357 Pending Application Submittal -> Applicant Upload
+NEW DOCUMENT  1513 S Michigan Ave: DRH26-00357  PDS-Application | 11/03/2026
+STATUS        1513 S Michigan Ave: PLN26-00954 Pending Application Submittal -> Planning Application Review
+UPDATED       1513 S Michigan Ave: PLN26-00954 (planning project) status is now Planning Application Review.
