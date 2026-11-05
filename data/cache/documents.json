@@ -283,7 +283,10 @@
       "PDS-Agency Comments - ACHD COMMENTS | 08/31/2026",
       "PDS-Agency Comments - SOUTH BOISE MUTUAL IRRIGATION COMPANY COMMENTS | 08/31/2026",
       "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING | 09/08/2026",
-      "PDS-Action Letter - ACTION LETTER FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 09/17/2026"
+      "PDS-Action Letter - ACTION LETTER FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 09/17/2026",
+      "PDS-Minutes - VERBATIM MINUTES FROM THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 11/04/2026",
+      "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26 | 11/04/2026",
+      "PDS-Maps and Drawings - REVISED FINAL PLAT DATED 10-2-26 | 11/04/2026"
     ],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00J5G&agencyCode=BOISE",
@@ -418,7 +421,7 @@
     "type": "Record of Survey"
   },
   "DRH26-00357": {
-    "status": "Applicant Upload",
+    "status": "Prescreen",
     "documents": [
       "PDS-Application | 11/03/2026"
     ],

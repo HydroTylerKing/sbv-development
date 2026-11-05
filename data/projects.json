@@ -1,8 +1,120 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
+    {
+      "id": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "name": "Montana Subdivision",
+      "kind": "Subdivision",
+      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
+      "stage": "Recommended for approval",
+      "stage_tone": "decision",
+      "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
+      "filed": "2026-01-26",
+      "last_activity": "2026-11-04",
+      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
+      "attributes": {
+        "Zoning": "R-1C (Residential: Traditional)",
+        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
+        "Units": "4 single-family lots",
+        "Size": "Lots about 4,073 to 5,481 SF",
+        "Height": "Not shown on plat",
+        "Setbacks": "Meets R-1C minimums per staff",
+        "Parking": "Per lot, on site",
+        "Access": "Common driveway to W Howard St"
+      },
+      "applications": [
+        {
+          "id": "SUB26-00033",
+          "type": "Preliminary & Final Plat",
+          "status": "In Review"
+        },
+        {
+          "id": "AWS26-00014",
+          "type": "Assured Water Supply",
+          "status": "Returned to Applicant"
+        },
+        {
+          "id": "NBR26-00037",
+          "type": "Neighborhood meeting list",
+          "status": "Complete"
+        }
+      ],
+      "images": [
+        {
+          "file": "pln26_00096_elevations_1.jpg",
+          "kind": "Elevations",
+          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
+          "source": {
+            "record": "SUB26-00033",
+            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
+            "uploaded": "11/04/2026",
+            "page": 1,
+            "retrieved": "2026-11-05",
+            "redacted": true
+          }
+        },
+        {
+          "file": "pln26_00096_site_plan_1.jpg",
+          "kind": "Plat",
+          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
+          "source": {
+            "record": "SUB26-00033",
+            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
+            "uploaded": "11/04/2026",
+            "page": 1,
+            "retrieved": "2026-11-05",
+            "redacted": true
+          }
+        }
+      ],
+      "timeline": {
+        "step": 3,
+        "flag": null,
+        "note": "P&Z recommended approval; City Council next",
+        "dates": {
+          "1": "2026-07-03",
+          "3": "2026-09-14"
+        }
+      },
+      "first_seen": "2026-10-01",
+      "primary_app": "SUB26-00033",
+      "lot_addresses": [
+        "1303 W HOWARD ST"
+      ],
+      "notice": {
+        "kind": "Planning & Zoning Commission hearing notice",
+        "record": "SUB26-00033",
+        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
+        "uploaded": "",
+        "radius_ft": 500,
+        "basis": "Staff report: radius notices mailed to properties within 500 feet"
+      },
+      "flags": [
+        {
+          "type": "hearing",
+          "status": "upcoming",
+          "record": "SUB26-00033",
+          "label": "City Council hearing coming",
+          "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
+        },
+        {
+          "type": "subdivision",
+          "status": "info",
+          "record": "SUB26-00033",
+          "label": "New lots (subdivision)",
+          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
+        }
+      ],
+      "contact": {
+        "planner": "David Moser",
+        "email": "DMoser@cityofboise.org",
+        "phone": "208-608-7087",
+        "source": "SUB26-00033 action letter"
+      }
+    },
     {
       "id": "PLN26-00954",
       "address": "1513 S Michigan Ave",
@@ -36,7 +148,7 @@
         {
           "id": "DRH26-00357",
           "type": "Design Review",
-          "status": "Applicant Upload"
+          "status": "Prescreen"
         }
       ],
       "images": [
@@ -536,105 +648,6 @@
       ]
     },
     {
-      "id": "PLN26-00096",
-      "address": "1303 W Howard St",
-      "name": "Montana Subdivision",
-      "kind": "Subdivision",
-      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
-      "stage": "Recommended for approval",
-      "stage_tone": "decision",
-      "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
-      "filed": "2026-01-26",
-      "last_activity": "2026-09-17",
-      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
-      "attributes": {
-        "Zoning": "R-1C (Residential: Traditional)",
-        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
-        "Units": "4 single-family lots",
-        "Size": "Lots about 4,073 to 5,481 SF",
-        "Height": "Not shown on plat",
-        "Setbacks": "Meets R-1C minimums per staff",
-        "Parking": "Per lot, on site",
-        "Access": "Common driveway to W Howard St"
-      },
-      "applications": [
-        {
-          "id": "SUB26-00033",
-          "type": "Preliminary & Final Plat",
-          "status": "In Review"
-        },
-        {
-          "id": "AWS26-00014",
-          "type": "Assured Water Supply",
-          "status": "Returned to Applicant"
-        },
-        {
-          "id": "NBR26-00037",
-          "type": "Neighborhood meeting list",
-          "status": "Complete"
-        }
-      ],
-      "images": [
-        {
-          "file": "howard_plat.jpg",
-          "kind": "Plat",
-          "caption": "Revised preliminary plat, 8/27/26 (no elevations filed)",
-          "source": {
-            "record": "SUB26-00033",
-            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 8-27-26",
-            "uploaded": "08/27/2026",
-            "page": 1,
-            "retrieved": "2026-10-22",
-            "redacted": true
-          }
-        }
-      ],
-      "timeline": {
-        "step": 3,
-        "flag": null,
-        "note": "P&Z recommended approval; City Council next",
-        "dates": {
-          "1": "2026-07-03",
-          "3": "2026-09-14"
-        }
-      },
-      "first_seen": "2026-10-01",
-      "primary_app": "SUB26-00033",
-      "lot_addresses": [
-        "1303 W HOWARD ST"
-      ],
-      "notice": {
-        "kind": "Planning & Zoning Commission hearing notice",
-        "record": "SUB26-00033",
-        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
-        "uploaded": "",
-        "radius_ft": 500,
-        "basis": "Staff report: radius notices mailed to properties within 500 feet"
-      },
-      "flags": [
-        {
-          "type": "hearing",
-          "status": "upcoming",
-          "record": "SUB26-00033",
-          "label": "City Council hearing coming",
-          "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
-        },
-        {
-          "type": "subdivision",
-          "status": "info",
-          "record": "SUB26-00033",
-          "label": "New lots (subdivision)",
-          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
-        }
-      ],
-      "contact": {
-        "planner": "David Moser",
-        "email": "DMoser@cityofboise.org",
-        "phone": "208-608-7087",
-        "source": "SUB26-00033 action letter"
-      }
-    },
-    {
       "id": "PLN26-00344",
       "address": "1529 S Vermont Ave",
       "name": "Vermont Avenue Garage ADUs",
@@ -973,6 +986,12 @@
       "project": "PLN26-00954",
       "address": "1513 S Michigan Ave",
       "change": "PLN26-00954 (planning project) status is now Planning Application Review."
+    },
+    {
+      "date": "2026-11-05",
+      "project": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "change": "Drawings updated from PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26."
     }
   ],
   "record_urls": {
