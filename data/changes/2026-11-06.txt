@@ -1,0 +1,4 @@
+NOT ON TRACKER PLN26-00768  1113 W Garfield St  (approved projects drop off the tracker; check the record status below)
+WARNING       related records for PLN26-00768 not checked: requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='permits.cityofboise.org', port=443): Read timed out. (read timeout=60)
+WARNING       PLN25-00824 not checked: requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='permits.cityofboise.org', port=443): Read timed out. (read timeout=60)
+WARNING       related records for PLN26-00344 not checked: RuntimeError: PLN26-00344: record page not found
