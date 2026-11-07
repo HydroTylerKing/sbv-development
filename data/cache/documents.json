@@ -460,5 +460,34 @@
     "url": null,
     "project": "PLN26-00481",
     "type": "Design Review"
+  },
+  "PLN26-01002": {
+    "status": "Pending Application Submittal",
+    "documents": [
+      "PDS-Application | 10/29/2026",
+      "PDS-Other Small Docs - LNC REQUEST | 11/06/2026",
+      "PDS-Concept Review Summary Report - | 11/06/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00XA6&agencyCode=BOISE",
+    "project": "PLN26-01002"
+  },
+  "BLD26-01682": {
+    "status": "Issued",
+    "documents": [
+      "PDS-Receipts - | 06/10/2026",
+      "PDS-Permit Application | 06/10/2026",
+      "PDS-Permit - | 06/10/2026"
+    ],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HRL&agencyCode=BOISE",
+    "project": "PLN26-01002"
+  },
+  "MIS26-00121": {
+    "status": "Issued",
+    "documents": [],
+    "appeal_end": null,
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HBD&agencyCode=BOISE",
+    "project": "PLN26-01002"
   }
 }
