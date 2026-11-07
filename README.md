@@ -50,10 +50,6 @@ Hand edits to `data/projects.json` are optional: use them to add detail or corre
 | `data/changes/` | One changes report per day |
 | `images/` | Drawings shown on the page |
 
-## Other pages
-
-Anything in `pages/` is published alongside the report. `pages/west-bench/index.html` is a one-time snapshot of the West Bench neighborhood built with the same code (Nov 6, 2026); it does not update itself. Live at https://hydrotylerking.github.io/sbv-development/west-bench/
-
 ## Run it on your own computer
 
 ```
