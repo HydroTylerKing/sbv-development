@@ -489,5 +489,13 @@
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HBD&agencyCode=BOISE",
     "project": "PLN26-01002"
+  },
+  "CZC26-00288": {
+    "status": "Pending Application Submittal",
+    "documents": [],
+    "appeal_end": null,
+    "url": null,
+    "project": "PLN26-01002",
+    "type": "Legal Non-Conforming Use"
   }
 }

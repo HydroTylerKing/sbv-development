@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -37,10 +37,25 @@
           "id": "MIS26-00121",
           "type": "Application",
           "status": "Issued"
+        },
+        {
+          "id": "CZC26-00288",
+          "type": "Legal Non-Conforming Use",
+          "status": "Pending Application Submittal"
         }
       ],
       "images": [],
-      "flags": [],
+      "flags": [
+        {
+          "type": "nonconforming",
+          "status": "upcoming",
+          "label": "Nonconforming use or structure",
+          "detail": "Application CZC26-00288 asks to establish an existing use or structure as legally nonconforming.",
+          "record": "CZC26-00288",
+          "key": "nonconforming:CZC26-00288",
+          "auto": true
+        }
+      ],
       "lot_addresses": [
         "1919 S EUCLID AVE"
       ],
@@ -1049,6 +1064,12 @@
       "project": "PLN26-01002",
       "address": "1919 S Euclid Ave",
       "change": "New project added automatically: Legal Non-Conforming for the home."
+    },
+    {
+      "date": "2026-11-08",
+      "project": "PLN26-01002",
+      "address": "1919 S Euclid Ave",
+      "change": "New application filed: CZC26-00288 (legal non-conforming use)."
     }
   ],
   "record_urls": {
