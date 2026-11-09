@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -9,9 +9,9 @@
       "name": "Legal Non-Conforming for the home",
       "kind": "Attached homes",
       "summary": "Legal Non-Conforming for an existing attached garage as it is not meeting the 15 ft street side setback. Added automatically from the City of Boise's case records; see the case file for full details.",
-      "stage": "Awaiting applications",
-      "stage_tone": "early",
-      "next_step": "Applications have not been filed yet.",
+      "stage": "Planning project in review",
+      "stage_tone": "review",
+      "next_step": "City review under way (status: Planning Application Review).",
       "filed": "2026-11-06",
       "last_activity": "2026-11-06",
       "team": "Not shown",
@@ -41,7 +41,7 @@
         {
           "id": "CZC26-00288",
           "type": "Legal Non-Conforming Use",
-          "status": "Pending Application Submittal"
+          "status": "Applicant Upload"
         }
       ],
       "images": [],
@@ -60,12 +60,13 @@
         "1919 S EUCLID AVE"
       ],
       "timeline": {
-        "step": 0,
+        "step": 2,
         "dates": {
-          "0": "2026-11-07"
+          "0": "2026-11-07",
+          "2": "2026-11-09"
         },
         "flag": null,
-        "note": "Concept review held; applications not yet filed"
+        "note": "Planning project planning application review"
       },
       "primary_app": "PLN26-01002"
     },
@@ -214,7 +215,7 @@
         {
           "id": "DRH26-00357",
           "type": "Design Review",
-          "status": "Prescreen"
+          "status": "Returned to Applicant"
         }
       ],
       "images": [
@@ -1070,6 +1071,12 @@
       "project": "PLN26-01002",
       "address": "1919 S Euclid Ave",
       "change": "New application filed: CZC26-00288 (legal non-conforming use)."
+    },
+    {
+      "date": "2026-11-09",
+      "project": "PLN26-01002",
+      "address": "1919 S Euclid Ave",
+      "change": "PLN26-01002 (planning project) status is now Planning Application Review."
     }
   ],
   "record_urls": {
@@ -1100,6 +1107,7 @@
     "DRH26-00357": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00XBJ&agencyCode=BOISE",
     "PLN26-01002": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00XA6&agencyCode=BOISE",
     "BLD26-01682": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HRL&agencyCode=BOISE",
-    "MIS26-00121": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HBD&agencyCode=BOISE"
+    "MIS26-00121": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Building&TabName=Building&capID1=26CAP&capID2=00000&capID3=00HBD&agencyCode=BOISE",
+    "CZC26-00288": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE"
   }
 }

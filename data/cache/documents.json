@@ -421,7 +421,7 @@
     "type": "Record of Survey"
   },
   "DRH26-00357": {
-    "status": "Prescreen",
+    "status": "Returned to Applicant",
     "documents": [
       "PDS-Application | 11/03/2026"
     ],
@@ -462,7 +462,7 @@
     "type": "Design Review"
   },
   "PLN26-01002": {
-    "status": "Pending Application Submittal",
+    "status": "Planning Application Review",
     "documents": [
       "PDS-Application | 10/29/2026",
       "PDS-Other Small Docs - LNC REQUEST | 11/06/2026",
@@ -491,11 +491,10 @@
     "project": "PLN26-01002"
   },
   "CZC26-00288": {
-    "status": "Pending Application Submittal",
+    "status": "Applicant Upload",
     "documents": [],
     "appeal_end": null,
-    "url": null,
-    "project": "PLN26-01002",
-    "type": "Legal Non-Conforming Use"
+    "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE",
+    "project": "PLN26-01002"
   }
 }
