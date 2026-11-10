@@ -92,7 +92,8 @@
       "PDS-Legal Notice - ADMIN NOTICE | 10/07/2026",
       "PDS-Correspondence - FIRE COMMENT RESPONSE LETTER 9/29/2026 | 10/07/2026",
       "PDS-Action Letter - ADMIN APPROVAL LETTER ISSUED 10/9/2026 | 10/09/2026",
-      "PDS-Appeals - APPEAL TO HE RECEIVED ON OCTOBER 19, 2026, NOT SCHEDULED | 10/22/2026"
+      "PDS-Appeals - APPEAL TO HE RECEIVED ON OCTOBER 19, 2026, NOT SCHEDULED | 10/22/2026",
+      "PDS-Appeals - APPEAL APPLICATION & MEMORANDA 10/19/2026 | 11/10/2026"
     ],
     "appeal_end": "10/19/2026",
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00OHT&agencyCode=BOISE",
@@ -491,7 +492,7 @@
     "project": "PLN26-01002"
   },
   "CZC26-00288": {
-    "status": "Applicant Upload",
+    "status": "Prescreen",
     "documents": [],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE",
