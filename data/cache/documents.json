@@ -287,7 +287,8 @@
       "PDS-Action Letter - ACTION LETTER FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 09/17/2026",
       "PDS-Minutes - VERBATIM MINUTES FROM THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 11/04/2026",
       "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26 | 11/04/2026",
-      "PDS-Maps and Drawings - REVISED FINAL PLAT DATED 10-2-26 | 11/04/2026"
+      "PDS-Maps and Drawings - REVISED FINAL PLAT DATED 10-2-26 | 11/04/2026",
+      "PDS-Project Report/Memo - PROJECT MEMO FOR THE NOVEMBER 17, 2026 CITY COUNCIL MEETING | 11/12/2026"
     ],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00J5G&agencyCode=BOISE",
@@ -492,7 +493,7 @@
     "project": "PLN26-01002"
   },
   "CZC26-00288": {
-    "status": "Prescreen",
+    "status": "Returned to Applicant",
     "documents": [],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE",
