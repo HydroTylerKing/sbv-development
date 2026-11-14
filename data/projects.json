@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -11,7 +11,7 @@
       "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
       "stage": "Recommended for approval",
       "stage_tone": "decision",
-      "next_step": "Planning & Zoning Commission recommended approval Sep 14, 2026. City Council hearing date not yet set.",
+      "next_step": "Public hearing before City Council on Nov 17, 2026.",
       "filed": "2026-01-26",
       "last_activity": "2026-11-12",
       "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
@@ -73,10 +73,10 @@
       "timeline": {
         "step": 3,
         "flag": null,
-        "note": "P&Z recommended approval; City Council next",
+        "note": "Hearing Nov 17",
         "dates": {
           "1": "2026-07-03",
-          "3": "2026-09-14"
+          "3": "2026-11-13"
         }
       },
       "first_seen": "2026-10-01",
@@ -95,10 +95,12 @@
       "flags": [
         {
           "type": "hearing",
-          "status": "upcoming",
+          "status": "open",
           "record": "SUB26-00033",
-          "label": "City Council hearing coming",
-          "detail": "Planning & Zoning recommended approval of the 4-lot Montana Subdivision on Sep 14. City Council will hold a public hearing; the date is not set."
+          "label": "Public hearing Nov 17",
+          "detail": "City Council hearing on Nov 17, 2026. Testimony can be given in writing beforehand or at the hearing.",
+          "key": "hearing:SUB26-00033",
+          "deadline": "2026-11-17"
         },
         {
           "type": "subdivision",
@@ -1084,6 +1086,12 @@
       "project": "PLN26-00594",
       "address": "1911 S Manitou Ave",
       "change": "Appeal filed on CZC26-00227."
+    },
+    {
+      "date": "2026-11-13",
+      "project": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "change": "Public hearing scheduled for Nov 17, 2026 (City Council)."
     }
   ],
   "record_urls": {
