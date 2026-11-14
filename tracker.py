@@ -9,7 +9,18 @@ URL = "https://services1.arcgis.com/WHM6qC35aMtyAAlN/ArcGIS/rest/services/Develo
 
 
 def day(ms):
-    return dt.datetime.fromtimestamp(ms / 1000, dt.timezone.utc).date().isoformat() if ms else None
+    if not ms:
+        return None
+    if isinstance(ms, str):  # the city sometimes sends dates as text, e.g. "2026-11-17" or "11/17/2026 10:00:00 AM"
+        text = ms.strip()
+        for fmt in ("%Y-%m-%d", "%m/%d/%Y"):
+            for part in (text, text.split("T")[0].split(" ")[0]):
+                try:
+                    return dt.datetime.strptime(part, fmt).date().isoformat()
+                except ValueError:
+                    pass
+        return None
+    return dt.datetime.fromtimestamp(ms / 1000, dt.timezone.utc).date().isoformat()
 
 
 def main():
