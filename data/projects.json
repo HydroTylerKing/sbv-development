@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -347,7 +347,7 @@
         {
           "id": "DRH26-00357",
           "type": "Design Review",
-          "status": "Returned to Applicant"
+          "status": "Received"
         }
       ],
       "images": [
