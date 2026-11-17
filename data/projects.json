@@ -1,122 +1,8 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
-    {
-      "id": "PLN26-00096",
-      "address": "1303 W Howard St",
-      "name": "Montana Subdivision",
-      "kind": "Subdivision",
-      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
-      "stage": "Recommended for approval",
-      "stage_tone": "decision",
-      "next_step": "Public hearing before City Council on Nov 17, 2026.",
-      "filed": "2026-01-26",
-      "last_activity": "2026-11-12",
-      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
-      "attributes": {
-        "Zoning": "R-1C (Residential: Traditional)",
-        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
-        "Units": "4 single-family lots",
-        "Size": "Lots about 4,073 to 5,481 SF",
-        "Height": "Not shown on plat",
-        "Setbacks": "Meets R-1C minimums per staff",
-        "Parking": "Per lot, on site",
-        "Access": "Common driveway to W Howard St"
-      },
-      "applications": [
-        {
-          "id": "SUB26-00033",
-          "type": "Preliminary & Final Plat",
-          "status": "In Review"
-        },
-        {
-          "id": "AWS26-00014",
-          "type": "Assured Water Supply",
-          "status": "Returned to Applicant"
-        },
-        {
-          "id": "NBR26-00037",
-          "type": "Neighborhood meeting list",
-          "status": "Complete"
-        }
-      ],
-      "images": [
-        {
-          "file": "pln26_00096_elevations_1.jpg",
-          "kind": "Elevations",
-          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
-          "source": {
-            "record": "SUB26-00033",
-            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
-            "uploaded": "11/04/2026",
-            "page": 1,
-            "retrieved": "2026-11-05",
-            "redacted": true
-          }
-        },
-        {
-          "file": "pln26_00096_site_plan_1.jpg",
-          "kind": "Plat",
-          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
-          "source": {
-            "record": "SUB26-00033",
-            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
-            "uploaded": "11/04/2026",
-            "page": 1,
-            "retrieved": "2026-11-05",
-            "redacted": true
-          }
-        }
-      ],
-      "timeline": {
-        "step": 3,
-        "flag": null,
-        "note": "Hearing Nov 17",
-        "dates": {
-          "1": "2026-07-03",
-          "3": "2026-11-13"
-        }
-      },
-      "first_seen": "2026-10-01",
-      "primary_app": "SUB26-00033",
-      "lot_addresses": [
-        "1303 W HOWARD ST"
-      ],
-      "notice": {
-        "kind": "Planning & Zoning Commission hearing notice",
-        "record": "SUB26-00033",
-        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
-        "uploaded": "",
-        "radius_ft": 500,
-        "basis": "Staff report: radius notices mailed to properties within 500 feet"
-      },
-      "flags": [
-        {
-          "type": "hearing",
-          "status": "open",
-          "record": "SUB26-00033",
-          "label": "Public hearing Nov 17",
-          "detail": "City Council hearing on Nov 17, 2026. Testimony can be given in writing beforehand or at the hearing.",
-          "key": "hearing:SUB26-00033",
-          "deadline": "2026-11-17"
-        },
-        {
-          "type": "subdivision",
-          "status": "info",
-          "record": "SUB26-00033",
-          "label": "New lots (subdivision)",
-          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
-        }
-      ],
-      "contact": {
-        "planner": "David Moser",
-        "email": "DMoser@cityofboise.org",
-        "phone": "208-608-7087",
-        "source": "SUB26-00033 action letter"
-      }
-    },
     {
       "id": "PLN26-00594",
       "address": "1911 S Manitou Ave",
@@ -127,7 +13,7 @@
       "stage_tone": "attention",
       "next_step": "The decision was appealed. The Hearing Examiner will hold a public hearing; written testimony can be submitted before it.",
       "filed": "2026-06-18",
-      "last_activity": "2026-11-10",
+      "last_activity": "2026-11-17",
       "team": "Property owner · Kings Roofing & Contracting · AP Drafting (plans)",
       "attributes": {
         "Zoning": "R-1C (Residential: Traditional)",
@@ -248,6 +134,214 @@
       }
     },
     {
+      "id": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "name": "Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes",
+      "kind": "Small lots",
+      "summary": "Construction of a new two-story, two-unit townhouse. Added automatically from the City of Boise's case records; see the case file for full details.",
+      "stage": "Planning project in review",
+      "stage_tone": "review",
+      "next_step": "City review under way (status: Planning Application Review).",
+      "filed": "2026-10-29",
+      "last_activity": "2026-11-17",
+      "team": "Not shown",
+      "first_seen": "2026-10-31",
+      "auto": true,
+      "attributes": {
+        "Zoning": "R-1C",
+        "Lot": "Not shown",
+        "Units": "1 Existing SFD to be demolished 2 proposed SFD attached (approx. 2,200 sq ft each)",
+        "Size": "Not shown",
+        "Height": "Not shown",
+        "Setbacks": "Not shown",
+        "Parking": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks. Access to be taken from the alley.",
+        "Access": "Not shown"
+      },
+      "applications": [
+        {
+          "id": "BLD26-03031",
+          "type": "Demolition permit",
+          "status": "Received"
+        },
+        {
+          "id": "DRH26-00357",
+          "type": "Design Review",
+          "status": "In Review"
+        }
+      ],
+      "images": [
+        {
+          "file": "pln26_00954_site_plan_1.jpg",
+          "kind": "Site plan",
+          "caption": "Site Plan And Landscape Plan, uploaded 10/14/2026 (PLN26-00954) (no elevations filed)",
+          "source": {
+            "record": "PLN26-00954",
+            "document": "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN",
+            "uploaded": "10/14/2026",
+            "page": 1,
+            "retrieved": "2026-10-31",
+            "redacted": true
+          }
+        }
+      ],
+      "flags": [
+        {
+          "type": "demolition",
+          "status": "upcoming",
+          "label": "Demolition",
+          "detail": "Demolition application BLD26-03031.",
+          "record": "BLD26-03031",
+          "key": "demolition:BLD26-03031",
+          "auto": true
+        },
+        {
+          "type": "design_review",
+          "status": "upcoming",
+          "label": "Design review",
+          "detail": "Design review application DRH26-00357.",
+          "record": "DRH26-00357",
+          "key": "design_review:DRH26-00357",
+          "auto": true
+        },
+        {
+          "type": "waiver",
+          "status": "upcoming",
+          "label": "Waiver requested",
+          "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
+          "record": "PLN26-00954",
+          "key": "waiver-desc:PLN26-00954",
+          "auto": true
+        }
+      ],
+      "lot_addresses": [
+        "1513 S MICHIGAN AVE"
+      ],
+      "timeline": {
+        "step": 2,
+        "dates": {
+          "0": "2026-10-31",
+          "2": "2026-11-04"
+        },
+        "flag": null,
+        "note": "Planning project planning application review"
+      },
+      "primary_app": "PLN26-00954"
+    },
+    {
+      "id": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "name": "Montana Subdivision",
+      "kind": "Subdivision",
+      "summary": "Half-acre parcel divided into four buildable lots and one common driveway lot, with homes shown on each lot. Mode Homes is the developer.",
+      "stage": "Recommended for approval",
+      "stage_tone": "decision",
+      "next_step": "Public hearing before City Council on Nov 17, 2026.",
+      "filed": "2026-01-26",
+      "last_activity": "2026-11-12",
+      "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
+      "attributes": {
+        "Zoning": "R-1C (Residential: Traditional)",
+        "Lot": "0.5 ac → 4 buildable lots + 1 common lot",
+        "Units": "4 single-family lots",
+        "Size": "Lots about 4,073 to 5,481 SF",
+        "Height": "Not shown on plat",
+        "Setbacks": "Meets R-1C minimums per staff",
+        "Parking": "Per lot, on site",
+        "Access": "Common driveway to W Howard St"
+      },
+      "applications": [
+        {
+          "id": "SUB26-00033",
+          "type": "Preliminary & Final Plat",
+          "status": "In Review"
+        },
+        {
+          "id": "AWS26-00014",
+          "type": "Assured Water Supply",
+          "status": "Returned to Applicant"
+        },
+        {
+          "id": "NBR26-00037",
+          "type": "Neighborhood meeting list",
+          "status": "Complete"
+        }
+      ],
+      "images": [
+        {
+          "file": "pln26_00096_elevations_1.jpg",
+          "kind": "Elevations",
+          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
+          "source": {
+            "record": "SUB26-00033",
+            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
+            "uploaded": "11/04/2026",
+            "page": 1,
+            "retrieved": "2026-11-05",
+            "redacted": true
+          }
+        },
+        {
+          "file": "pln26_00096_site_plan_1.jpg",
+          "kind": "Plat",
+          "caption": "Revised Preliminary Plat Dated 10-2-26, uploaded 11/04/2026 (SUB26-00033)",
+          "source": {
+            "record": "SUB26-00033",
+            "document": "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26",
+            "uploaded": "11/04/2026",
+            "page": 1,
+            "retrieved": "2026-11-05",
+            "redacted": true
+          }
+        }
+      ],
+      "timeline": {
+        "step": 3,
+        "flag": null,
+        "note": "Hearing Nov 17",
+        "dates": {
+          "1": "2026-07-03",
+          "3": "2026-11-13"
+        }
+      },
+      "first_seen": "2026-10-01",
+      "primary_app": "SUB26-00033",
+      "lot_addresses": [
+        "1303 W HOWARD ST"
+      ],
+      "notice": {
+        "kind": "Planning & Zoning Commission hearing notice",
+        "record": "SUB26-00033",
+        "document": "PDS-Project Report/Memo - PROJECT REPORT FOR THE SEPTEMBER 14, 2026 PLANNING AND ZONING MEETING",
+        "uploaded": "",
+        "radius_ft": 500,
+        "basis": "Staff report: radius notices mailed to properties within 500 feet"
+      },
+      "flags": [
+        {
+          "type": "hearing",
+          "status": "open",
+          "record": "SUB26-00033",
+          "label": "Public hearing Nov 17",
+          "detail": "City Council hearing on Nov 17, 2026. Testimony can be given in writing beforehand or at the hearing.",
+          "key": "hearing:SUB26-00033",
+          "deadline": "2026-11-17"
+        },
+        {
+          "type": "subdivision",
+          "status": "info",
+          "record": "SUB26-00033",
+          "label": "New lots (subdivision)",
+          "detail": "Half-acre parcel divided into 4 buildable lots on a common driveway; arborist report filed."
+        }
+      ],
+      "contact": {
+        "planner": "David Moser",
+        "email": "DMoser@cityofboise.org",
+        "phone": "208-608-7087",
+        "source": "SUB26-00033 action letter"
+      }
+    },
+    {
       "id": "PLN26-01002",
       "address": "1919 S Euclid Ave",
       "name": "Legal Non-Conforming for the home",
@@ -313,100 +407,6 @@
         "note": "Planning project planning application review"
       },
       "primary_app": "PLN26-01002"
-    },
-    {
-      "id": "PLN26-00954",
-      "address": "1513 S Michigan Ave",
-      "name": "Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes",
-      "kind": "Small lots",
-      "summary": "Construction of a new two-story, two-unit townhouse. Added automatically from the City of Boise's case records; see the case file for full details.",
-      "stage": "Planning project in review",
-      "stage_tone": "review",
-      "next_step": "City review under way (status: Planning Application Review).",
-      "filed": "2026-10-29",
-      "last_activity": "2026-11-03",
-      "team": "Not shown",
-      "first_seen": "2026-10-31",
-      "auto": true,
-      "attributes": {
-        "Zoning": "R-1C",
-        "Lot": "Not shown",
-        "Units": "1 Existing SFD to be demolished 2 proposed SFD attached (approx. 2,200 sq ft each)",
-        "Size": "Not shown",
-        "Height": "Not shown",
-        "Setbacks": "Not shown",
-        "Parking": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks. Access to be taken from the alley.",
-        "Access": "Not shown"
-      },
-      "applications": [
-        {
-          "id": "BLD26-03031",
-          "type": "Demolition permit",
-          "status": "Received"
-        },
-        {
-          "id": "DRH26-00357",
-          "type": "Design Review",
-          "status": "Received"
-        }
-      ],
-      "images": [
-        {
-          "file": "pln26_00954_site_plan_1.jpg",
-          "kind": "Site plan",
-          "caption": "Site Plan And Landscape Plan, uploaded 10/14/2026 (PLN26-00954) (no elevations filed)",
-          "source": {
-            "record": "PLN26-00954",
-            "document": "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN",
-            "uploaded": "10/14/2026",
-            "page": 1,
-            "retrieved": "2026-10-31",
-            "redacted": true
-          }
-        }
-      ],
-      "flags": [
-        {
-          "type": "demolition",
-          "status": "upcoming",
-          "label": "Demolition",
-          "detail": "Demolition application BLD26-03031.",
-          "record": "BLD26-03031",
-          "key": "demolition:BLD26-03031",
-          "auto": true
-        },
-        {
-          "type": "design_review",
-          "status": "upcoming",
-          "label": "Design review",
-          "detail": "Design review application DRH26-00357.",
-          "record": "DRH26-00357",
-          "key": "design_review:DRH26-00357",
-          "auto": true
-        },
-        {
-          "type": "waiver",
-          "status": "upcoming",
-          "label": "Waiver requested",
-          "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
-          "record": "PLN26-00954",
-          "key": "waiver-desc:PLN26-00954",
-          "auto": true
-        }
-      ],
-      "lot_addresses": [
-        "1513 S MICHIGAN AVE"
-      ],
-      "timeline": {
-        "step": 2,
-        "dates": {
-          "0": "2026-10-31",
-          "2": "2026-11-04"
-        },
-        "flag": null,
-        "note": "Planning project planning application review"
-      },
-      "primary_app": "PLN26-00954"
     },
     {
       "id": "PLN26-00941",
