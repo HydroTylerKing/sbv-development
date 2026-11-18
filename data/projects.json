@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -13,7 +13,7 @@
       "stage_tone": "attention",
       "next_step": "The decision was appealed. The Hearing Examiner will hold a public hearing; written testimony can be submitted before it.",
       "filed": "2026-06-18",
-      "last_activity": "2026-11-17",
+      "last_activity": "2026-11-18",
       "team": "Property owner · Kings Roofing & Contracting · AP Drafting (plans)",
       "attributes": {
         "Zoning": "R-1C (Residential: Traditional)",
@@ -319,7 +319,7 @@
       "flags": [
         {
           "type": "hearing",
-          "status": "open",
+          "status": "past",
           "record": "SUB26-00033",
           "label": "Public hearing Nov 17",
           "detail": "City Council hearing on Nov 17, 2026. Testimony can be given in writing beforehand or at the hearing.",
@@ -1092,6 +1092,12 @@
       "project": "PLN26-00096",
       "address": "1303 W Howard St",
       "change": "Public hearing scheduled for Nov 17, 2026 (City Council)."
+    },
+    {
+      "date": "2026-11-18",
+      "project": "PLN26-00096",
+      "address": "1303 W Howard St",
+      "change": "Hearing date passed."
     }
   ],
   "record_urls": {
