@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -124,6 +124,15 @@
           "record": "CZC26-00227",
           "label": "Accessory building over 1,000 SF",
           "detail": "The 1,580 SF two-story garage and ADU needed special approval findings for size and compatibility with the house and neighbors."
+        },
+        {
+          "type": "hearing",
+          "status": "upcoming",
+          "label": "Public hearing noticed",
+          "detail": "The city posted a hearing notice (PDS-Correspondence - NOTIFICATION LETTER FOR THE DECEMBER 7, 2026 HE HEARING). Testimony can be given in writing or at the hearing.",
+          "record": "CZC26-00227",
+          "key": "hearing:CZC26-00227",
+          "auto": true
         }
       ],
       "contact": {
@@ -1098,6 +1107,12 @@
       "project": "PLN26-00096",
       "address": "1303 W Howard St",
       "change": "Hearing date passed."
+    },
+    {
+      "date": "2026-11-19",
+      "project": "PLN26-00594",
+      "address": "1911 S Manitou Ave",
+      "change": "Hearing notice posted on CZC26-00227."
     }
   ],
   "record_urls": {
