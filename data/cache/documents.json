@@ -497,8 +497,10 @@
     "project": "PLN26-01002"
   },
   "CZC26-00288": {
-    "status": "Prescreen",
-    "documents": [],
+    "status": "Received",
+    "documents": [
+      "PDS-Application | 11/23/2026"
+    ],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE",
     "project": "PLN26-01002"
