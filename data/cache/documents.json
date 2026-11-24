@@ -96,7 +96,10 @@
       "PDS-Appeals - APPEAL APPLICATION & MEMORANDA 10/19/2026 | 11/10/2026",
       "PDS-Legal Notice - HE NOTICE | 11/17/2026",
       "PDS-Other Small Docs - PROOF OF SITE POSTING | 11/18/2026",
-      "PDS-Correspondence - NOTIFICATION LETTER FOR THE DECEMBER 7, 2026 HE HEARING | 11/18/2026"
+      "PDS-Correspondence - NOTIFICATION LETTER FOR THE DECEMBER 7, 2026 HE HEARING | 11/18/2026",
+      "PDS-Maps and Drawings - LAND USE MAP | 11/24/2026",
+      "PDS-Maps and Drawings - ZONING MAP | 11/24/2026",
+      "PDS-Maps and Drawings - AERIAL MAP | 11/24/2026"
     ],
     "appeal_end": "10/19/2026",
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00OHT&agencyCode=BOISE",
@@ -291,7 +294,8 @@
       "PDS-Minutes - VERBATIM MINUTES FROM THE SEPTEMBER 14, 2026 PLANNING AND ZONING COMMISSION MEETING | 11/04/2026",
       "PDS-Maps and Drawings - REVISED PRELIMINARY PLAT DATED 10-2-26 | 11/04/2026",
       "PDS-Maps and Drawings - REVISED FINAL PLAT DATED 10-2-26 | 11/04/2026",
-      "PDS-Project Report/Memo - PROJECT MEMO FOR THE NOVEMBER 17, 2026 CITY COUNCIL MEETING | 11/12/2026"
+      "PDS-Project Report/Memo - PROJECT MEMO FOR THE NOVEMBER 17, 2026 CITY COUNCIL MEETING | 11/12/2026",
+      "PDS-Action Letter - ACTION LETTER FROM THE NOVEMBER 17, 2026 CITY COUNCIL MEETING | 11/24/2026"
     ],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00J5G&agencyCode=BOISE",
@@ -497,9 +501,10 @@
     "project": "PLN26-01002"
   },
   "CZC26-00288": {
-    "status": "Received",
+    "status": "In Review",
     "documents": [
-      "PDS-Application | 11/23/2026"
+      "PDS-Application | 11/23/2026",
+      "PDS-Receipts - | 11/24/2026"
     ],
     "appeal_end": null,
     "url": "https://permits.cityofboise.org/CitizenAccess/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00Y5X&agencyCode=BOISE",

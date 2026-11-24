@@ -1,6 +1,6 @@
 {
   "neighborhood": "South Boise Village",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "source_note": "City of Boise Development Tracker and Permitting & Licensing case files",
   "projects": [
     {
@@ -13,7 +13,7 @@
       "stage_tone": "review",
       "next_step": "City review under way (status: Planning Application Review).",
       "filed": "2026-11-06",
-      "last_activity": "2026-11-23",
+      "last_activity": "2026-11-24",
       "team": "Not shown",
       "first_seen": "2026-11-07",
       "auto": true,
@@ -41,7 +41,7 @@
         {
           "id": "CZC26-00288",
           "type": "Legal Non-Conforming Use",
-          "status": "Received"
+          "status": "In Review"
         }
       ],
       "images": [],
@@ -80,7 +80,7 @@
       "stage_tone": "attention",
       "next_step": "The decision was appealed. The Hearing Examiner will hold a public hearing; written testimony can be submitted before it.",
       "filed": "2026-06-18",
-      "last_activity": "2026-11-18",
+      "last_activity": "2026-11-24",
       "team": "Property owner · Kings Roofing & Contracting · AP Drafting (plans)",
       "attributes": {
         "Zoning": "R-1C (Residential: Traditional)",
@@ -106,41 +106,28 @@
       ],
       "images": [
         {
-          "file": "manitou1911_v2_elev1.jpg",
+          "file": "pln26_00594_elevations_1.jpg",
           "kind": "Elevations",
-          "caption": "Revised front and south elevations V2, sheet A301, 9/23/26 (CZC26-00227)",
+          "caption": "Land Use Map, uploaded 11/24/2026 (CZC26-00227)",
           "source": {
             "record": "CZC26-00227",
-            "document": "PDS-Maps and Drawings - ELEVATIONS V2 9/23/2026",
-            "uploaded": "09/25/2026",
+            "document": "PDS-Maps and Drawings - LAND USE MAP",
+            "uploaded": "11/24/2026",
             "page": 1,
-            "retrieved": "2026-10-22",
+            "retrieved": "2026-11-24",
             "redacted": true
           }
         },
         {
-          "file": "manitou1911_v2_elev2.jpg",
-          "kind": "Elevations",
-          "caption": "Revised east and west elevations V2, sheet A302, 9/23/26 (CZC26-00227)",
-          "source": {
-            "record": "CZC26-00227",
-            "document": "PDS-Maps and Drawings - ELEVATIONS V2 9/23/2026",
-            "uploaded": "09/25/2026",
-            "page": 2,
-            "retrieved": "2026-10-22",
-            "redacted": true
-          }
-        },
-        {
-          "file": "manitou1911_v2_site.jpg",
+          "file": "pln26_00594_site_plan_1.jpg",
           "kind": "Site plan",
-          "caption": "Revised site plan V2, sheet A050, 9/23/26 (CZC26-00227)",
+          "caption": "Site Plan V2 9/23/2026, uploaded 09/25/2026 (CZC26-00227)",
           "source": {
             "record": "CZC26-00227",
             "document": "PDS-Maps and Drawings - SITE PLAN V2 9/23/2026",
             "uploaded": "09/25/2026",
             "page": 1,
-            "retrieved": "2026-10-22",
+            "retrieved": "2026-11-24",
             "redacted": true
           }
         }
@@ -210,100 +197,6 @@
       }
     },
     {
-      "id": "PLN26-00954",
-      "address": "1513 S Michigan Ave",
-      "name": "Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes",
-      "kind": "Small lots",
-      "summary": "Construction of a new two-story, two-unit townhouse. Added automatically from the City of Boise's case records; see the case file for full details.",
-      "stage": "Planning project in review",
-      "stage_tone": "review",
-      "next_step": "City review under way (status: Planning Application Review).",
-      "filed": "2026-10-29",
-      "last_activity": "2026-11-17",
-      "team": "Not shown",
-      "first_seen": "2026-10-31",
-      "auto": true,
-      "attributes": {
-        "Zoning": "R-1C",
-        "Lot": "Not shown",
-        "Units": "1 Existing SFD to be demolished 2 proposed SFD attached (approx. 2,200 sq ft each)",
-        "Size": "Not shown",
-        "Height": "Not shown",
-        "Setbacks": "Not shown",
-        "Parking": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks. Access to be taken from the alley.",
-        "Access": "Not shown"
-      },
-      "applications": [
-        {
-          "id": "BLD26-03031",
-          "type": "Demolition permit",
-          "status": "Received"
-        },
-        {
-          "id": "DRH26-00357",
-          "type": "Design Review",
-          "status": "In Review"
-        }
-      ],
-      "images": [
-        {
-          "file": "pln26_00954_site_plan_1.jpg",
-          "kind": "Site plan",
-          "caption": "Site Plan And Landscape Plan, uploaded 10/14/2026 (PLN26-00954) (no elevations filed)",
-          "source": {
-            "record": "PLN26-00954",
-            "document": "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN",
-            "uploaded": "10/14/2026",
-            "page": 1,
-            "retrieved": "2026-10-31",
-            "redacted": true
-          }
-        }
-      ],
-      "flags": [
-        {
-          "type": "demolition",
-          "status": "upcoming",
-          "label": "Demolition",
-          "detail": "Demolition application BLD26-03031.",
-          "record": "BLD26-03031",
-          "key": "demolition:BLD26-03031",
-          "auto": true
-        },
-        {
-          "type": "design_review",
-          "status": "upcoming",
-          "label": "Design review",
-          "detail": "Design review application DRH26-00357.",
-          "record": "DRH26-00357",
-          "key": "design_review:DRH26-00357",
-          "auto": true
-        },
-        {
-          "type": "waiver",
-          "status": "upcoming",
-          "label": "Waiver requested",
-          "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
-          "record": "PLN26-00954",
-          "key": "waiver-desc:PLN26-00954",
-          "auto": true
-        }
-      ],
-      "lot_addresses": [
-        "1513 S MICHIGAN AVE"
-      ],
-      "timeline": {
-        "step": 2,
-        "dates": {
-          "0": "2026-10-31",
-          "2": "2026-11-04"
-        },
-        "flag": null,
-        "note": "Planning project planning application review"
-      },
-      "primary_app": "PLN26-00954"
-    },
-    {
       "id": "PLN26-00096",
       "address": "1303 W Howard St",
       "name": "Montana Subdivision",
@@ -313,7 +206,7 @@
       "stage_tone": "decision",
       "next_step": "Public hearing before City Council on Nov 17, 2026.",
       "filed": "2026-01-26",
-      "last_activity": "2026-11-12",
+      "last_activity": "2026-11-24",
       "team": "Mode Homes · Timberline Surveying · Civilsphere Engineering",
       "attributes": {
         "Zoning": "R-1C (Residential: Traditional)",
@@ -416,6 +309,100 @@
         "phone": "208-608-7087",
         "source": "SUB26-00033 action letter"
       }
+    },
+    {
+      "id": "PLN26-00954",
+      "address": "1513 S Michigan Ave",
+      "name": "Demolish existing Single Family Dwelling. Then do a Small Lot with Single-Family Attached Homes",
+      "kind": "Small lots",
+      "summary": "Construction of a new two-story, two-unit townhouse. Added automatically from the City of Boise's case records; see the case file for full details.",
+      "stage": "Planning project in review",
+      "stage_tone": "review",
+      "next_step": "City review under way (status: Planning Application Review).",
+      "filed": "2026-10-29",
+      "last_activity": "2026-11-17",
+      "team": "Not shown",
+      "first_seen": "2026-10-31",
+      "auto": true,
+      "attributes": {
+        "Zoning": "R-1C",
+        "Lot": "Not shown",
+        "Units": "1 Existing SFD to be demolished 2 proposed SFD attached (approx. 2,200 sq ft each)",
+        "Size": "Not shown",
+        "Height": "Not shown",
+        "Setbacks": "Not shown",
+        "Parking": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks. Access to be taken from the alley.",
+        "Access": "Not shown"
+      },
+      "applications": [
+        {
+          "id": "BLD26-03031",
+          "type": "Demolition permit",
+          "status": "Received"
+        },
+        {
+          "id": "DRH26-00357",
+          "type": "Design Review",
+          "status": "In Review"
+        }
+      ],
+      "images": [
+        {
+          "file": "pln26_00954_site_plan_1.jpg",
+          "kind": "Site plan",
+          "caption": "Site Plan And Landscape Plan, uploaded 10/14/2026 (PLN26-00954) (no elevations filed)",
+          "source": {
+            "record": "PLN26-00954",
+            "document": "PDS-Other Small Docs - SITE PLAN AND LANDSCAPE PLAN",
+            "uploaded": "10/14/2026",
+            "page": 1,
+            "retrieved": "2026-10-31",
+            "redacted": true
+          }
+        }
+      ],
+      "flags": [
+        {
+          "type": "demolition",
+          "status": "upcoming",
+          "label": "Demolition",
+          "detail": "Demolition application BLD26-03031.",
+          "record": "BLD26-03031",
+          "key": "demolition:BLD26-03031",
+          "auto": true
+        },
+        {
+          "type": "design_review",
+          "status": "upcoming",
+          "label": "Design review",
+          "detail": "Design review application DRH26-00357.",
+          "record": "DRH26-00357",
+          "key": "design_review:DRH26-00357",
+          "auto": true
+        },
+        {
+          "type": "waiver",
+          "status": "upcoming",
+          "label": "Waiver requested",
+          "detail": "One parking space per Single Family Dwelling Applicant is requesting a waiver to keep the attached sidewalks.",
+          "record": "PLN26-00954",
+          "key": "waiver-desc:PLN26-00954",
+          "auto": true
+        }
+      ],
+      "lot_addresses": [
+        "1513 S MICHIGAN AVE"
+      ],
+      "timeline": {
+        "step": 2,
+        "dates": {
+          "0": "2026-10-31",
+          "2": "2026-11-04"
+        },
+        "flag": null,
+        "note": "Planning project planning application review"
+      },
+      "primary_app": "PLN26-00954"
     },
     {
       "id": "PLN26-00941",
@@ -1113,6 +1100,12 @@
       "project": "PLN26-00594",
       "address": "1911 S Manitou Ave",
       "change": "Hearing notice posted on CZC26-00227."
+    },
+    {
+      "date": "2026-11-24",
+      "project": "PLN26-00594",
+      "address": "1911 S Manitou Ave",
+      "change": "Drawings updated from PDS-Maps and Drawings - LAND USE MAP, PDS-Maps and Drawings - SITE PLAN V2 9/23/2026."
     }
   ],
   "record_urls": {
